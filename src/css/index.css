@@ -65,6 +65,9 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: rgb(0, 0, 139);
+}
 @media screen and (max-width:1300px) {
     .image{
         top: 10vh;
