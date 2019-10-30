@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow: hidden;
+  }
+
 .column{
     float: left;
     width: 50%;
@@ -17,12 +21,24 @@ h1{
 }
 
 img{
-    width: 350px;
+    width: 450px;
+    transform: translateX(-30px);
+    margin-bottom: 10px;
 }
 
+.c1{
+    transform: translateY(-45px);
+}
+
+.c2{
+    transform: translateY(15px);
+}
 .slogan{
+    
     font-family: 'Kalam', cursive;
     font-size: 35px;
+    transform: translateX(-10px);
+    transform: translateY(-40px);
 }
 
 .vl {
