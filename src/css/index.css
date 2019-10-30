@@ -27,13 +27,19 @@ img{
     transform: translateX(-30px);
     margin-bottom: 10px;
 }
-
+ ::placeholder{
+     color: rgba(0, 60, 88, 0.5);
+ }
 .c1{
     transform: translateY(-45px);
 }
 
 .c2{
-    transform: translateY(15px);
+    transform: translateY(30px);
+}
+
+.cr2{
+    transform: translateY(-5px);
 }
 .slogan{
     
@@ -41,10 +47,11 @@ img{
     font-size: 35px;
     transform: translateX(-10px);
     transform: translateY(-40px);
+    color: #003C58;
 }
 
 .vl {
-  border-left: 3px solid #DCDCDC;
+  border-left: 3px solid rgba(0, 59, 86, 0.6);
   height: 100%;
   position: absolute;
   left: 50%;
@@ -57,17 +64,21 @@ img{
     top:50px;
   }
 
+input:focus{
+    outline: none;
+}
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid rgba(0, 59, 86, 0.7);
     box-sizing: border-box;
     font-size: 30px;
     margin-bottom: 20px;
     border-radius: 50px;
     font-family: "Helvetica";
+    color: #003C58;
   }
 
 button{
