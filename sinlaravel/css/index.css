@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html, body {
@@ -94,8 +95,15 @@ button{
     margin-top: 20px;
 }
 
+.message{
+    padding: 4vh;
+    transform: translateX(15px);
+    font-family: "Helvetica";
+    color: #003C58;
+    font-size: 17px;
+}
 button:hover{
-    border: none;
+    letter-spacing: 3px;
 }
 
 @media screen and (max-width:1000px) {
