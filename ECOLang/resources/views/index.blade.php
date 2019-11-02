@@ -78,7 +78,7 @@
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#">
-      	<img src="img/logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
+      	<img src="../img/logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -130,9 +130,9 @@
 	        <div class="panel-heading">Tema 2</div>
 	        <div class="panel-body"> 
 	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
+	        		<li> <a href="pastS"> Past simple </a> </li>
+	        		<li><a href="exercisePS">Exercises</a></li>
+	        		<li>Vocabulary(verbs)</li>
 	        	</ul>
 	        </div>
 	      </div>
