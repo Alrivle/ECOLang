@@ -24,3 +24,7 @@ Route::get('/', function () {
 Route::get('/videos', function () {
     return view('videos');
 });
+
+Route::get('/lecturaPS', function () {
+    return view('lecturaPS');
+});

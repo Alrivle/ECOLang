@@ -137,7 +137,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
         <span class="caret"></span></a>
         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="Ejercicios.html">Temas</a></li>
+          <li><a href="/">Temas</a></li>
           <li class="dropdown-submenu">
             <a tabindex="-1" href="#">Ejercicios</a>
             <ul class="dropdown-menu">

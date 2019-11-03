@@ -76,6 +76,12 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
   </style>
 
 <script>
@@ -251,8 +257,11 @@
 	<p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/>swimming </p>
 	<p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/>swim</p>
       </ul>
-      
-      <button onclick="Score()">Resultado</button>
+      <br>
+      <div align="center">
+      <button onclick="Score()" class="button2" >Resultado</button>
+      </div>
+      <br>
     </div>
   </div>
 
