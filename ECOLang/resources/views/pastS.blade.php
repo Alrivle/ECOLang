@@ -77,8 +77,48 @@
     border-radius: 6px 0 6px 6px;
 }
   </style>
+
+<script>
+    var res = new Array;
+    var no = new Array;
+    var tures = new Array;
+    var explicares = new Array;
+    var calif = 0;
+
+    res[1]= "c";
+    res[2]= "b";
+    res[3]= "b";
+    res[4]= "a";
+    res[5]= "a";
+
+    explicares[1]= "The correct answer is c";
+    explicares[2]= "The correct answer is b";
+    explicares[3]= "The correct answer is b";
+    explicares[4]= "The correct answer is a";
+    explicares[5]= "The correct answer is a";
+
+    function Engine(question, answer){
+        tures[question] = answer;
+    }
+
+    function Score(){
+        var answertext="Resultado\n";
+        calif = 0;
+        for(i=1; i<=5; i++){
+	    answertext = answertext + "\nPreguntas"+ i + ":";
+	    if(res[i] != tures[i]){
+                  answertext = answertext + explicares[i]+ "\n";
+	    }else{
+		      answertext = answertext + "bien\n";
+		      calif++;
+	    }
+	}
+		       answertext = answertext + "\nCalificacion:" + calif;
+		       alert(answertext);
+    }
+  </script>
 </head>
-<body>
+<body marginheight="15">
 
 <nav class="navbar navbar">
   <div class="container-fluid">
@@ -217,45 +257,6 @@
   </div>
 
   
-  <script>
-    var res = new Array;
-    var no = new Array;
-    var tures = new Array;
-    var explicares = new Array;
-    var calif = 0;
-
-    res[1]= "c";
-    res[2]= "b";
-    res[3]= "b";
-    res[4]= "a";
-    res[5]= "a";
-
-    explicares[1]= "The correct answer is c";
-    explicares[2]= "The correct answer is b";
-    explicares[3]= "The correct answer is b";
-    explicares[4]= "The correct answer is a";
-    explicares[5]= "The correct answer is a";
-
-    function Engine(question, answer){
-        tures[question] = answer;
-    }
-
-    function Score(){
-        var answertext="Resultado\n";
-        calif = 0;
-        for(i=1; i<=5; i++){
-	    answertext = answertext + "\nPreguntas"+ i + ":";
-	    if(res[i] != tures[i]){
-                  answertext = answertext + explicares[i]+ "\n";
-	    }else{
-		      answertext = answertext + "bien\n";
-		      calif++;
-	    }
-	}
-		       answertext = answertext + "\nCalificacion:" + calif;
-		       alert(answertext);
-    }
-  </script>
 
 </body>
 </html>
