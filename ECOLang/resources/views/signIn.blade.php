@@ -24,9 +24,9 @@
                         <h1>Regístrate</h1>
                         <div class="login">
                             <form action="">
-                                <input type="text" placeholder="Nombre" name="name" maxlength="20">
-                                <input type="text" placeholder="Correo" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20">
-                                <input type="password" placeholder="Contraseña" name="password" maxlength="20">
+                                <input type="text" placeholder="Nombre" name="name" maxlength="20" required="true">
+                                <input type="text" placeholder="Correo" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20" required="true">
+                                <input type="password" placeholder="Contraseña" name="password" maxlength="20" required="true">
                                 <button type="submit">Confirmar</button>
                             </form>
                         </div>
