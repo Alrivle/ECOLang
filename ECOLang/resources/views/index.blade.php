@@ -78,7 +78,7 @@
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#">
-      	<img src="img/logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
+      	<img src="../img/logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -87,7 +87,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
         <span class="caret"></span></a>
         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="index.blade.php">Temas</a></li>
+          <li><a href="/">Temas</a></li>
           <li class="dropdown-submenu">
         <a tabindex="-1" href="#">Ejercicios</a>
         <ul class="dropdown-menu">
@@ -130,9 +130,9 @@
 	        <div class="panel-heading">Tema 2</div>
 	        <div class="panel-body"> 
 	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
+	        		<li> <a href="pastS"> Past simple </a> </li>
+	        		<li><a href="exercisePS">Exercises</a></li>
+	        		<li><a href="lecturaPS">Reading</a></li>
 	        	</ul>
 	        </div>
 	      </div>

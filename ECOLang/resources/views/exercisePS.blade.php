@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Ejercicios</title>
+  <title>Past Simple Excercises</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -21,6 +21,16 @@
     }
     .dropdown-submenu {
     position: relative;
+}
+
+.numeracion{
+   font-size:20px;
+   background: #DCDCDC;
+	
+}
+
+.eg{
+   font-size:20px;	
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -88,7 +98,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
         <span class="caret"></span></a>
         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="/">Temas</a></li>
+          <li><a href="Ejercicios.html">Temas</a></li>
           <li class="dropdown-submenu">
             <a tabindex="-1" href="#">Ejercicios</a>
             <ul class="dropdown-menu">
@@ -111,45 +121,58 @@
 </nav>
 
 <div class="container">    
-  <div class="row" align="center">
-    <h2 style="text-align: center;">Video de:</h2></br>
-    <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/ICQHcTMk1Lo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <div class="row" align="center">
+     	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
+
+     </div>
+</div><br>
+
+    <div class="numeracion">
+    <ul>
+      <h2>Example</h2>
+      <div class="container">
+        <div class="eg" align="left">
+          Did you <b>take</b> my toy?   
+        </div>     
+      </div>
+    </ul>
+    </div>
+
+<div class="container">    
+  <div class="row">
+    <h2  style="color:#056196">Remember:</h2>
+    <div class="eg">
+    	 <p>For regular verbs we add: 'ed' at the final of the verb.</p>
+    	 <ul>
+		<li>want - wanted</li>
+		<li>jump - jumped</li>
+		<li>watch - watched</li>
+	 </ul>
+	 <p>For irregular verbs, is a special case:</p>
+	 <ul>
+		<li>run - ran</li>
+		<li>drive - drove</li>
+		<li>take - took</li>
+	 </ul>
+    </div>
   </div>
 </div><br>
 
 <div class="container">    
   <div class="row">
-    <h2>Respuestas</h2>
-    <div class='parent'>
-      <span id='draggableSpan'
-        draggable='true'
-        ondragstart='onDragStart(event);'>
-        draggable
-      </span>
-
-
+    <h2  style="color:#F8436E">Be careful!!</h2>
+    <div class="eg">
+    <p>When we use the negative, we don’t change the main verb. We use ‘didn’t’ instead.</p>
+    	 <ul>
+		<li>I <b>didn't do</b> my homework</li>
+		<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
+		<li>We <b>didn't eat</b> pozole</li>
+		<li>They <b>didn't wait</b> their order</li>
+	 </ul>
     </div>
   </div>
 </div><br>
 
-<div class="container">
-  <div class="row">
-    <h2 style="text-align: center;">Preguntas</h2>
-    <div class="col-sm-8"> 
-      1.Que es get? <br><br>
-      2.Porque se usa get? <br><br>
-      3.Donde se usa get? <br><br>
-      4.I ____ to get around by bicycle, now I get around mostly on foot. <br><br>
-    </div>
-    <div class="col-sm-4">
-      <div class="parent">
-          <span
-          ondragover='onDragOver(event);'
-          ondrop='onDrop(event);'> dropzone </span>
-      </div>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>

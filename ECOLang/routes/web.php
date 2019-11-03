@@ -11,9 +11,20 @@
 |
 */
 
+Route::get('/pastS', function () {
+    return view('pastS');
+});
+Route::get('/exercisePS', function () {
+    return view('exercisePS');
+});
+
 Route::get('/', function () {
     return view('index');
 });
 Route::get('/videos', function () {
     return view('videos');
+});
+
+Route::get('/lecturaPS', function () {
+    return view('lecturaPS');
 });
