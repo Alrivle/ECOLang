@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Past Simple</title>
+  <title>Past Simple Excercises</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -123,27 +123,20 @@
 <div class="container">    
      <div class="row" align="center">
      	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
-	  <div class="numeracion">
-		<ul>
-			<li type="disc" >We use past simple for actions, events or situations that are finished</li>
-		</ul>
-	  </div>
+
      </div>
 </div><br>
 
-<div class="container">    
-  <div class="row">
-    <h2>Examples</h2>
-    <div class="eg">
-    	 <ul>
-		<li>They <b> worked</b> hard</li>
-		<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
-		<li> <b>Did</b> you <b>played</b> soccer?</li>
-		<li>They <b>ate</b> a lot of cake in the party</li>
-	 </ul>
+    <div class="numeracion">
+    <ul>
+      <h2>Example</h2>
+      <div class="container">
+        <div class="eg" align="left">
+          Did you <b>take</b> my toy?   
+        </div>     
+      </div>
+    </ul>
     </div>
-  </div>
-</div><br>
 
 <div class="container">    
   <div class="row">
