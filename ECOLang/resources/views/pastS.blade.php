@@ -96,12 +96,15 @@
     res[3]= "b";
     res[4]= "a";
     res[5]= "a";
+    
 
     explicares[1]= "The correct answer is c";
     explicares[2]= "The correct answer is b";
     explicares[3]= "The correct answer is b";
     explicares[4]= "The correct answer is a";
     explicares[5]= "The correct answer is a";
+    
+
 
     function Engine(question, answer){
         tures[question] = answer;

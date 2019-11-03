@@ -96,12 +96,23 @@
     res[3]= "b";
     res[4]= "a";
     res[5]= "a";
+    res[6]= ""; 
+    res[7]= ""; 
+    res[8]= ""; 
+    res[9]= ""; 
+    res[10]= ""; 
+
 
     explicares[1]= "The correct answer is a";
     explicares[2]= "The correct answer is b";
     explicares[3]= "The correct answer is b";
     explicares[4]= "The correct answer is a";
     explicares[5]= "The correct answer is a";
+    explicares[6] = "The correct answer is ";
+    explicares[7] = "The correct answer is ";
+    explicares[8] = "The correct answer is ";
+    explicares[9] = "The correct answer is ";
+    explicares[10] = "The correct answer is ";
 
     function Engine(question, answer){
         tures[question] = answer;
@@ -218,6 +229,10 @@
   <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> run </p>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> go</p>
       </ul>
+      <br>
+
+
+      
       <br>
       <div align="center">
       <button onclick="Score()" class="button2" >Resultado</button>
