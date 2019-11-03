@@ -132,7 +132,7 @@
 	        	<ul class="ejercicios">
 	        		<li> <a href="pastS"> Past simple </a> </li>
 	        		<li><a href="exercisePS">Exercises</a></li>
-	        		<li>Vocabulary(verbs)</li>
+	        		<li><a href="lecturaPS">Reading</a></li>
 	        	</ul>
 	        </div>
 	      </div>
