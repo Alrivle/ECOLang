@@ -76,7 +76,54 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
   </style>
+
+<script>
+    var res = new Array;
+    var no = new Array;
+    var tures = new Array;
+    var explicares = new Array;
+    var calif = 0;
+
+    res[1]= "a";
+    res[2]= "b";
+    res[3]= "b";
+    res[4]= "a";
+    res[5]= "a";
+
+    explicares[1]= "The correct answer is a";
+    explicares[2]= "The correct answer is b";
+    explicares[3]= "The correct answer is b";
+    explicares[4]= "The correct answer is a";
+    explicares[5]= "The correct answer is a";
+
+    function Engine(question, answer){
+        tures[question] = answer;
+    }
+
+    function Score(){
+        var answertext="Resultado\n";
+        calif = 0;
+        for(i=1; i<=5; i++){
+      answertext = answertext + "\nPreguntas"+ i + ":";
+      if(res[i] != tures[i]){
+                  answertext = answertext + explicares[i]+ "\n";
+      }else{
+          answertext = answertext + "bien\n";
+          calif++;
+      }
+  }
+           answertext = answertext + "\nCalificacion:" + calif;
+           alert(answertext);
+    }
+  </script>
+
 </head>
 <body>
 
@@ -98,7 +145,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
         <span class="caret"></span></a>
         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="Ejercicios.html">Temas</a></li>
+          <li><a href="/">Temas</a></li>
           <li class="dropdown-submenu">
             <a tabindex="-1" href="#">Ejercicios</a>
             <ul class="dropdown-menu">
@@ -132,46 +179,54 @@
       <h2>Example</h2>
       <div class="container">
         <div class="eg" align="left">
-          Did you <b>take</b> my toy?   
+          She <b>took</b> my toy!   
         </div>     
       </div>
     </ul>
     </div>
 
-<div class="container">    
-  <div class="row">
-    <h2  style="color:#056196">Remember:</h2>
-    <div class="eg">
-    	 <p>For regular verbs we add: 'ed' at the final of the verb.</p>
-    	 <ul>
-		<li>want - wanted</li>
-		<li>jump - jumped</li>
-		<li>watch - watched</li>
-	 </ul>
-	 <p>For irregular verbs, is a special case:</p>
-	 <ul>
-		<li>run - ran</li>
-		<li>drive - drove</li>
-		<li>take - took</li>
-	 </ul>
-    </div>
-  </div>
-</div><br>
 
-<div class="container">    
+  <div class="container">    
   <div class="row">
-    <h2  style="color:#F8436E">Be careful!!</h2>
+    <h2 >Exercises</h2>
     <div class="eg">
-    <p>When we use the negative, we don’t change the main verb. We use ‘didn’t’ instead.</p>
-    	 <ul>
-		<li>I <b>didn't do</b> my homework</li>
-		<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
-		<li>We <b>didn't eat</b> pozole</li>
-		<li>They <b>didn't wait</b> their order</li>
-	 </ul>
+      <p>Select the correct option</p>
+
+      <ul>
+  <li>She ___ to the Olympics.</li>
+  <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> went</p>
+  <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> want </p>
+  <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> go </p>
+
+  <li>I ___ a fast car.</li>
+  <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> buy </p>
+  <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> drove </p>
+  <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> clean </p>
+
+  <li>They ___ milk the last saturday.</li>
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> drink </p>
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> drank </p>
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
+
+  <li>They ___ in the last party.</li>
+  <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> danced </p>
+  <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> eat</p>
+  <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> jump</p>
+
+  <li>We ___ for an hour.</li>
+  <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> waited </p>
+  <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> run </p>
+  <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> go</p>
+      </ul>
+      <br>
+      <div align="center">
+      <button onclick="Score()" class="button2" >Resultado</button>
+      </div>
+      <br>
     </div>
   </div>
-</div><br>
+
+
 
 
 </body>
