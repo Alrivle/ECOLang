@@ -127,8 +127,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
+      <a class="navbar-brand" href="index">
+        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -153,7 +153,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
       </ul>
     </div>
   </div>

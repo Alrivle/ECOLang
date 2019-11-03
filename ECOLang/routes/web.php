@@ -28,3 +28,15 @@ Route::get('/videos', function () {
 Route::get('/lecturaPS', function () {
     return view('lecturaPS');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/signIn', function () {
+    return view('signIn');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
