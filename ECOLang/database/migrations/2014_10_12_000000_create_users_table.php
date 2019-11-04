@@ -17,8 +17,18 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('rol');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+
+        Schema::create('exercises', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('subject')->unique();
+            $table->integer('grade');
+            $table->string('comments');
             $table->rememberToken();
             $table->timestamps();
         });

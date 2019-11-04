@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    overflow: hidden;
+  }
+
+.column{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 10%;
+    height: 100%;
+}
+
+h1{
+    font-size: 60px;
+    font-family: "Helvetica";
+    color: #337ab7;
+}
+
+img{
+    width: 450px;
+    transform: translateX(-30px);
+    margin-bottom: 10px;
+}
+ ::placeholder{
+     color: rgba(51, 122, 183, 0.5);
+ }
+.c1{
+    transform: translateY(-45px);
+}
+
+.c2{
+    transform: translateY(30px);
+}
+
+.cr2{
+    transform: translateY(-5px);
+}
+.slogan{
+    
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    transform: translateX(-10px);
+    transform: translateY(-40px);
+    color: rgb(51, 122, 183);
+}
+
+.vl {
+  border-left: 3px solid rgba(51, 122, 183, 0.6);
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  }
+
+.login {
+    position: relative;
+    top:50px;
+  }
+
+input:focus{
+    outline: none;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(51, 122, 183, 0.7);
+    box-sizing: border-box;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    font-family: "Helvetica";
+    color: rgb(51, 122, 183);
+  }
+
+button{
+    font-size: 30px;
+    color: white;
+    margin-left: 30px;
+    border: 2px solid rgb(51, 122, 183);
+    background-color: rgb(51, 122, 183);
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 20px;
+}
+
+.message{
+    padding: 4vh;
+    transform: translateX(15px);
+    font-family: "Helvetica";
+    color: rgb(51, 122, 183);
+    font-size: 17px;
+}
+button:hover{
+    letter-spacing: 3px;
+}
+
+.error{
+    font-family: "Helvetica";
+    color: rgb(202, 0, 0);
+    font-size: 20px;
+}
+@media screen and (max-width:1000px) {
+    h1{
+        font-size: 40px;
+    }
+    img{
+        width: 280px;
+    }
+    input[type=text], input[type=password] {
+        font-size: 20px;
+    }
+    .slogan{
+        font-size: 25px;
+    }
+    button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    h1{
+        font-size: 30px;
+    }
+    img{
+        width: 220px;
+    }
+    input[type=text], input[type=password] {
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 20px;
+    }
+    img{
+        width: 140px;
+    }
+    input[type=text], input[type=password] {
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .logo{
+        width: 120px;
+    }
+    .slogan{
+        font-size: 20px;
+    }
+    .column{
+        padding: 20% 10% 0 5%;
+    }
+}

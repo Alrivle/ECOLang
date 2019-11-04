@@ -29,13 +29,24 @@
    background: #DCDCDC;
 	
 }
+
+.button2 {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #337ab7;
+  transition: all 0.3s ease 0s;
+  font-size: 28px;
+}
+
 #exercise-container{
     display: flex;
     margin-left:10%;
     margin-right:10%;
     margin-top: 40px;
+    margin-bottom: 40px;
     background-color: #E2ECFF;
-    box-shadow: 10px 15px 10px #888888;
+    box-shadow: 10px 5px 10px 3px #888888;
 }
 
 .column{
@@ -45,12 +56,12 @@
 
 #column-one{
     margin-left: 10%;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 #column-two{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .column-element{
@@ -59,6 +70,7 @@
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+    border-radius: 8px;
 }
 .eg{
    font-size:20px;	
@@ -68,6 +80,10 @@
    font-size:20px;
    font-family:'Report';
    src: url(/font/);
+}
+
+button:hover{
+    letter-spacing: 3px;
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -127,8 +143,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
+      <a class="navbar-brand" href="index">
+        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -137,7 +153,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
         <span class="caret"></span></a>
         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="Ejercicios.html">Temas</a></li>
+          <li><a href="/">Temas</a></li>
           <li class="dropdown-submenu">
             <a tabindex="-1" href="#">Ejercicios</a>
             <ul class="dropdown-menu">
@@ -153,7 +169,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -201,6 +217,9 @@
             ></column>
 	 </div>
     </div>
+    <div align="center">
+      <button onclick="Score()" class="button2" >Check</button>
+      </div>
   </div>
 </div><br>
 
@@ -258,50 +277,74 @@ function clickedEvent(e){
     user_answer.push(key);
     switch(this.clicked){
         case 0:
-            if(key < 5){ //se verifica que no se haya seleccionado un elemento de la columna incorrecta
+            if(key < 7){ //se verifica que no se haya seleccionado un elemento de la columna incorrecta
                 e[0].style = "background-color: #B0CEF5"
                 this.clicked += 1; //pasamos al siguiente elemento
             }
         break;
         case 1:
-            if(key > 4){
+            if(key > 6){
                 e[0].style = "background-color: #B0CEF5"
                 this.clicked += 1;
             }
         break;
         case 2:
-            if(key < 5){
+            if(key < 7){
                 e[0].style = "background-color: #9BFABD"
                 this.clicked += 1;
             }
         break;
         case 3:
-            if(key > 4){
+            if(key > 6){
                 e[0].style = "background-color: #9BFABD"
                 this.clicked += 1;
             }
         break;
         case 4:
-            if(key < 5){
+            if(key < 7){
                 e[0].style = "background-color: #F9FBA2"
                 this.clicked += 1;
             }
         break;
         case 5:
-            if(key > 4){
+            if(key > 6){
                 e[0].style = "background-color: #F9FBA2"
                 this.clicked += 1;
             }
         break;
         case 6:
-            if(key < 5){
-                e[0].style = "background-color: #CE472A"
+            if(key < 7){
+                e[0].style = "background-color:#fa5d57"
                 this.clicked += 1;
             }
         break;
         case 7:
-            if(key > 4){
-                e[0].style = "background-color: #CE472A"
+            if(key > 6){
+                e[0].style = "background-color: #fa5d57"
+                this.clicked += 1;
+            }
+        break;
+        case 8:
+            if(key < 7){
+                e[0].style = "background-color: #fbdaa2"
+                this.clicked += 1;
+            }
+        break;
+        case 9:
+            if(key > 6){
+                e[0].style = "background-color: #fbdaa2"
+                this.clicked += 1;
+            }
+        break;
+        case 10:
+            if(key < 7){
+                e[0].style = "background-color: #fba2bb"
+                this.clicked += 1;
+            }
+        break;
+        case 11:
+            if(key > 6 ){
+                e[0].style = "background-color: #fba2bb"
             }
         break;
     }

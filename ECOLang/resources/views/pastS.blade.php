@@ -76,6 +76,18 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+
+.button2 {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #337ab7;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    letter-spacing: 3px;
+}
   </style>
 
 <script>
@@ -105,16 +117,17 @@
         var answertext="Resultado\n";
         calif = 0;
         for(i=1; i<=5; i++){
-	    answertext = answertext + "\nPreguntas"+ i + ":";
+	    answertext = answertext + "\nQuestion "+ i + ": ";
 	    if(res[i] != tures[i]){
                   answertext = answertext + explicares[i]+ "\n";
 	    }else{
-		      answertext = answertext + "bien\n";
+		      answertext = answertext + "Correct !!\n";
 		      calif++;
 	    }
 	}
-		       answertext = answertext + "\nCalificacion:" + calif;
+		       answertext = answertext + "\nScore: " + calif;
 		       alert(answertext);
+           window.location.reload();
     }
   </script>
 </head>
@@ -128,8 +141,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
+      <a class="navbar-brand" href="index">
+        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -138,7 +151,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
         <span class="caret"></span></a>
         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="Ejercicios.html">Temas</a></li>
+          <li><a href="/">Temas</a></li>
           <li class="dropdown-submenu">
             <a tabindex="-1" href="#">Ejercicios</a>
             <ul class="dropdown-menu">
@@ -154,7 +167,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -251,8 +264,11 @@
 	<p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/>swimming </p>
 	<p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/>swim</p>
       </ul>
-      
-      <button onclick="Score()">Resultado</button>
+      <br>
+      <div align="center">
+      <button onclick="Score()" class="button2" >Check</button>
+      </div>
+      <br>
     </div>
   </div>
 

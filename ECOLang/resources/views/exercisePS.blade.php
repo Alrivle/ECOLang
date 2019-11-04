@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Past Simple</title>
+  <title>Past Simple Excercises</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -88,8 +88,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
+      <a class="navbar-brand" href="index">
+        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -114,7 +114,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -123,23 +123,17 @@
 <div class="container">    
      <div class="row" align="center">
      	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
-	  <div class="numeracion">
-		<ul>
-			<li type="disc" >We use past simple for actions, events or situations that are finished</li>
-		</ul>
-	  </div>
+
      </div>
 </div><br>
 
-<div class="container">    
+
+    <div class="container">    
   <div class="row">
-    <h2>Examples</h2>
+    <h2>Example</h2>
     <div class="eg">
     	 <ul>
-		<li>They <b> worked</b> hard</li>
-		<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
-		<li> <b>Did</b> you <b>played</b> soccer?</li>
-		<li>They <b>ate</b> a lot of cake in the party</li>
+		<li>Did you <b>take</b> my toy?  </li>
 	 </ul>
     </div>
   </div>
