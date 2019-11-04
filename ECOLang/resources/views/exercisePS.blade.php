@@ -83,6 +83,11 @@
   border: 2px solid #4CAF50; /* Green */
 }
 
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid:grey; /* Green */
+}
 #outer
 {
     width:100%;
@@ -144,6 +149,14 @@
            answertext = answertext + "\nCalificacion:" + calif;
            alert(answertext);
     }
+
+    function salir() {
+   if (confirm("Exit?")) {
+      location.replace("/")
+  } else {
+    false
+  }   
+}
   </script>
 
 </head>
@@ -314,7 +327,8 @@
       
       <br>
       <div align="center">
-      <button onclick="Score()" class="button2" >Resultado</button>
+      <button onclick="Score()" class="button2" >Finish</button>
+      <a style="cursor: pointer;" onclick="salir()">Cancel</a>
       </div>
       <br>
     </div>
