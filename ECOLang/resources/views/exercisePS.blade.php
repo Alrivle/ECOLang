@@ -127,16 +127,17 @@
      </div>
 </div><br>
 
-    <div class="numeracion">
-    <ul>
-      <h2>Example</h2>
-      <div class="container">
-        <div class="eg" align="left">
-          Did you <b>take</b> my toy?   
-        </div>     
-      </div>
-    </ul>
+
+    <div class="container">    
+  <div class="row">
+    <h2>Example</h2>
+    <div class="eg">
+    	 <ul>
+		<li>Did you <b>take</b> my toy?  </li>
+	 </ul>
     </div>
+  </div>
+</div><br>
 
 <div class="container">    
   <div class="row">

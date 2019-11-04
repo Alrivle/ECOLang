@@ -40,3 +40,5 @@ Route::get('/signIn', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::post('DB','Auth\LoginController@login')->name('login');

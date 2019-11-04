@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
+    <link rel="stylesheet" href="/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +24,7 @@
                 <div class="c2">
                         <h1>Iniciar Sesión</h1>
                         <div class="login">
-                            <form action="">
+                            <form method="POST" action="">
                                 <input type="text" placeholder="Correo" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20" required="true">
                                 <input type="password" placeholder="Contraseña" name="password" maxlength="20" required="true">
                                 <button type="submit">Iniciar Sesión</button>

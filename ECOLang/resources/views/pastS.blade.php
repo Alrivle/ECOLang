@@ -80,7 +80,13 @@
 .button2 {
   background-color: white;
   color: black;
-  border: 2px solid #4CAF50; /* Green */
+  border-radius: 5px;
+  border: 2px solid #337ab7;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    letter-spacing: 3px;
 }
   </style>
 
@@ -111,16 +117,17 @@
         var answertext="Resultado\n";
         calif = 0;
         for(i=1; i<=5; i++){
-	    answertext = answertext + "\nPreguntas"+ i + ":";
+	    answertext = answertext + "\nQuestion "+ i + ": ";
 	    if(res[i] != tures[i]){
                   answertext = answertext + explicares[i]+ "\n";
 	    }else{
-		      answertext = answertext + "bien\n";
+		      answertext = answertext + "Correct !!\n";
 		      calif++;
 	    }
 	}
-		       answertext = answertext + "\nCalificacion:" + calif;
+		       answertext = answertext + "\nScore: " + calif;
 		       alert(answertext);
+           window.location.reload();
     }
   </script>
 </head>
@@ -259,7 +266,7 @@
       </ul>
       <br>
       <div align="center">
-      <button onclick="Score()" class="button2" >Resultado</button>
+      <button onclick="Score()" class="button2" >Check</button>
       </div>
       <br>
     </div>
