@@ -82,6 +82,17 @@
   color: black;
   border: 2px solid #4CAF50; /* Green */
 }
+
+#outer
+{
+    width:100%;
+    text-align: left;
+}
+.inner
+{
+  text-align: left;
+    display: inline-block;
+}
   </style>
 
 <script>
@@ -96,11 +107,11 @@
     res[3]= "b";
     res[4]= "a";
     res[5]= "a";
-    res[6]= ""; 
-    res[7]= ""; 
-    res[8]= ""; 
-    res[9]= ""; 
-    res[10]= ""; 
+    res[6]= "b"; 
+    res[7]= "a"; 
+    res[8]= "b"; 
+    res[9]= "c"; 
+    res[10]= "b"; 
 
 
     explicares[1]= "The correct answer is a";
@@ -108,11 +119,11 @@
     explicares[3]= "The correct answer is b";
     explicares[4]= "The correct answer is a";
     explicares[5]= "The correct answer is a";
-    explicares[6] = "The correct answer is ";
-    explicares[7] = "The correct answer is ";
-    explicares[8] = "The correct answer is ";
-    explicares[9] = "The correct answer is ";
-    explicares[10] = "The correct answer is ";
+    explicares[6] = "The correct answer is b";
+    explicares[7] = "The correct answer is a";
+    explicares[8] = "The correct answer is b";
+    explicares[9] = "The correct answer is c";
+    explicares[10] = "The correct answer is b";
 
     function Engine(question, answer){
         tures[question] = answer;
@@ -121,7 +132,7 @@
     function Score(){
         var answertext="Resultado\n";
         calif = 0;
-        for(i=1; i<=5; i++){
+        for(i=1; i<=10; i++){
       answertext = answertext + "\nPreguntas"+ i + ":";
       if(res[i] != tures[i]){
                   answertext = answertext + explicares[i]+ "\n";
@@ -185,24 +196,37 @@
      </div>
 </div><br>
 
+    
+
+
+  <div class="container">    
+  <div class="row">
+    <h2 >Exercises</h2>
     <div class="numeracion">
     <ul>
-      <h2>Example</h2>
+      <h3>Exercise 1</h3>
       <div class="container">
         <div class="eg" align="left">
-          She <b>took</b> my toy!   
+          <p>Select the right answer (Simple Past).</p>
+
+<ul>
+      <h4>Example</h4>
+      <div class="container">
+        <div class="eg" align="left">
+         <h4>  She <b>took</b> my toy!    </h4>
+        </div>     
+      </div>
+    </ul>
+
+
         </div>     
       </div>
     </ul>
     </div>
 
 
-  <div class="container">    
-  <div class="row">
-    <h2 >Exercises</h2>
-    <div class="eg">
-      <p>Select the correct option</p>
 
+    <div class="eg">
       <ul>
   <li>She ___ to the Olympics.</li>
   <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> went</p>
@@ -228,6 +252,61 @@
   <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> waited </p>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> run </p>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> go</p>
+      </ul>
+      <br>
+
+<div class="numeracion">
+    <ul>
+      <h2>Exercise 2</h2>
+      <div class="container">
+        <div class="eg" align="left">
+          Select the right conjugation (Simple Past). 
+
+          <ul>
+      <h4>Example</h4>
+      <div class="container">
+        <div class="eg" align="left">
+
+<div id="outer">
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> eat </button></div>
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> dance </button></div>
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="border-color:Green;"/> drank </button></div>
+</div>
+
+        </div>     
+      </div>
+    </ul>
+
+        </div>     
+      </div>
+    </ul>
+</div>
+
+<ul>
+  6.
+  <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> begin</p>
+  <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> began </p>
+  <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> begun </p>
+
+  7.
+  <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> broke </p>
+  <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> break </p>
+  <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> broken </p>
+
+  8.
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> choose </p>
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> chose </p>
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> chosen </p>
+
+  9.
+  <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> eaten </p>
+  <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> eat</p>
+  <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> ate</p>
+
+  10.
+  <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> fly </p>
+  <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> flew </p>
+  <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> flown</p>
       </ul>
       <br>
 
