@@ -24,9 +24,11 @@
                 <div class="c2">
                         <h1>Iniciar Sesión</h1>
                         <div class="login">
-                            <form method="POST" action="">
-                                <input type="text" placeholder="Correo" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20" required="true">
+                            <form method="POST" action="{{route ('logInDB')}}">
+                                {{csrf_field()}}
+                                <input type="text" placeholder="Correo" name="email" value="{{old('email')}}" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20">
                                 <input type="password" placeholder="Contraseña" name="password" maxlength="20" required="true">
+                                {!! $errors->first('password','<span class="error">:message</span>')!!}
                                 <button type="submit">Iniciar Sesión</button>
                                 <div class="message">
                                     <p>¿No tienes una cuenta? <a href="signIn">Regístrate</a></p>

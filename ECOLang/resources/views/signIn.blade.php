@@ -23,9 +23,11 @@
                 <div class="cr2">
                         <h1>Regístrate</h1>
                         <div class="login">
-                            <form action="">
+                            <form method="POST" action="{{route('register')}}">
+                            {{csrf_field()}}
                                 <input type="text" placeholder="Nombre" name="name" maxlength="20" required="true">
                                 <input type="text" placeholder="Correo" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20" required="true">
+                                {!! $errors->first('email','<span class="error">:message</span>')!!}
                                 <input type="password" placeholder="Contraseña" name="password" maxlength="20" required="true">
                                 <button type="submit">Confirmar</button>
                             </form>

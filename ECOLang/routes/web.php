@@ -41,4 +41,5 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::post('DB','Auth\LoginController@login')->name('login');
+Route::post('logINDB','Auth\LoginController@login')->name('logInDB');
+Route::post('register','Auth\RegisterController@create')->name('register');
