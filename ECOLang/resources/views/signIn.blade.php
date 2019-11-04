@@ -25,7 +25,7 @@
                         <div class="login">
                             <form method="POST" action="{{route('register')}}">
                             {{csrf_field()}}
-                                <input type="text" placeholder="Nombre" name="name" maxlength="20" required="true">
+                                <input type="text" placeholder="Nombre" name="name" value="{{old('name')}}" maxlength="20" required="true">
                                 <input type="text" placeholder="Correo" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20" required="true">
                                 {!! $errors->first('email','<span class="error">:message</span>')!!}
                                 <input type="password" placeholder="Contraseña" name="password" maxlength="20" required="true">

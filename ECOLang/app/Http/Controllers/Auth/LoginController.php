@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\HTTP\Request;
 use Illuminate\Support\Facades\DB;
+
 class LoginController extends Controller
 {
     public function login(request $request){
@@ -17,7 +17,8 @@ class LoginController extends Controller
         {
             return view('index');
         }else{
-            return back()->withErrors(['password'=> 'Usuario o contraseña incorrecta']);
+            return back()->withErrors(['password'=> 'Usuario o contraseña incorrecta'])
+                         ->withInput(request(['email']));
         }
     }
 }

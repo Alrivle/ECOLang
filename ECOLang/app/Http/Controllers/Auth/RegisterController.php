@@ -33,12 +33,15 @@ class RegisterController extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
         $password = $request->input('password');
-        try{
-            DB::insert('insert into users(name,email,password,rol) values(?,?,?,"User")',[$name,$email,$password]);
-            return view('login');
-        }catch (PDOException $e) {
-            echo 'Error de conexión: ';
-            exit;
+        $data = DB::select('select id from users where email=?',[$email]);
+        if(count($data))
+        {
+            return back()->withErrors(['email'=> 'Correo ya registrado'])
+                         ->withInput(request(['name']));
+        }else{
+            DB::insert('insert into users(name,email,password) values(?,?,?)',[$name,$email,$password]);
+            return view('index');
         }
+        
     }
 }
