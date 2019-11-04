@@ -219,7 +219,7 @@
     </div>
   </div>
 
-  <div class="container">    
+  <div class="container" style="padding-bottom:100px">    
   <div class="row">
     <h2 >Ejercicios</h2>
     <div class="eg">
