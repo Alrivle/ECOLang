@@ -80,7 +80,13 @@
 .button2 {
   background-color: white;
   color: black;
-  border: 2px solid #4CAF50; /* Green */
+  border-radius: 5px;
+  border: 2px solid #337ab7;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    letter-spacing: 3px;
 }
   </style>
 
@@ -114,16 +120,17 @@
         var answertext="Resultado\n";
         calif = 0;
         for(i=1; i<=5; i++){
-	    answertext = answertext + "\nPreguntas"+ i + ":";
+	    answertext = answertext + "\nQuestion "+ i + ": ";
 	    if(res[i] != tures[i]){
                   answertext = answertext + explicares[i]+ "\n";
 	    }else{
-		      answertext = answertext + "bien\n";
+		      answertext = answertext + "Correct !!\n";
 		      calif++;
 	    }
 	}
-		       answertext = answertext + "\nCalificacion:" + calif;
+		       answertext = answertext + "\nScore: " + calif;
 		       alert(answertext);
+           window.location.reload();
     }
   </script>
 </head>
@@ -137,8 +144,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="logo.jpeg" alt="logo" style="width:6vh; margin: -6px;"/>
+      <a class="navbar-brand" href="index">
+        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -163,7 +170,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -262,7 +269,7 @@
       </ul>
       <br>
       <div align="center">
-      <button onclick="Score()" class="button2" >Resultado</button>
+      <button onclick="Score()" class="button2" >Check</button>
       </div>
       <br>
     </div>
