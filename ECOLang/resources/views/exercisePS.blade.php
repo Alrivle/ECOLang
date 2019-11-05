@@ -90,6 +90,9 @@
     margin-top: 20px;
 }
 
+button:hover{
+    letter-spacing: 3px;
+}
 
 #outer
 {
