@@ -102,12 +102,15 @@ button:hover{
     res[3]= "b";
     res[4]= "a";
     res[5]= "a";
+    
 
     explicares[1]= "The correct answer is c";
     explicares[2]= "The correct answer is b";
     explicares[3]= "The correct answer is b";
     explicares[4]= "The correct answer is a";
     explicares[5]= "The correct answer is a";
+    
+
 
     function Engine(question, answer){
         tures[question] = answer;
@@ -240,29 +243,29 @@ button:hover{
 
       <ul>
 	<li>She ___ the piano yesterday.</li>
-	<p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/>plays </p>
-	<p><input type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/>play </p>
-	<p><input type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/>played </p>
+	<p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> plays </p>
+	<p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> play </p>
+	<p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> played </p>
 
 	<li>I ___ pizza last week.</li>
-	<p><input type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/>eaten </p>
-	<p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/>ate </p>
-	<p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/>eat </p>
+	<p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> eaten </p>
+	<p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> ate </p>
+	<p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> eat </p>
 
 	<li>You ___ milk the last saturday.</li>
-	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>drinks </p>
-	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>drank </p>
-	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>clean </p>
+	<p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> drinks </p>
+	<p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> drank </p>
+	<p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
 
 	<li>He ___ in the last party.</li>
-	<p><input type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/>didn't sing </p>
-	<p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/>sung </p>
-	<p><input type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/>jump</p>
+	<p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> didn't sing </p>
+	<p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> sung </p>
+	<p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> jump</p>
 
 	<li>We ___ in the pool the last vacation.</li>
-	<p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/>swam </p>
-	<p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/>swimming </p>
-	<p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/>swim</p>
+	<p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> swam </p>
+	<p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> swimming </p>
+	<p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> swim</p>
       </ul>
       <br>
       <div align="center">
