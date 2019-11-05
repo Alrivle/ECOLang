@@ -260,7 +260,7 @@ let app = new Vue({
     questions: [{key:1,content:'Billy was hungry and...'},{key:2,content:'His dad ordered...'},{key:3,content:'The pizza cost...'},{key:4,content:'They took the pizza...'},
     {key:5,content:'They watched...'},{key:6,content:'They wanted the Yankees...'}],
     answers: [{key:7,content:'$16 and dad also gave the man a tip.'},{key:8,content:'wanted to eat pizza.'},{key:9,content:'to lose the game.'},{key:10,content:'pizza with four toppings.'},
-    {key:11,content:'to the living room.'},{key:10,content:'a baseball game on TV.'}],
+    {key:11,content:'to the living room.'},{key:12,content:'a baseball game on TV.'}],
         clicked: 0,
     },
     methods:{
@@ -268,7 +268,8 @@ let app = new Vue({
     }
 })
 
-var match = [1,7,2,6,3,5,4,8]
+var match = [[1,8],[2,10],[3,7],[4,11],[5,12],[6,9]]
+var first = 0;
 var user_answer = []
 /**
  * Colorea el elemento seleccionado por el usuario
@@ -278,81 +279,109 @@ var user_answer = []
  */
 function clickedEvent(e){
     key = parseInt(e[1],10);
-    user_answer.push(key);
     switch(this.clicked){
         case 0:
             if(key < 7){ //se verifica que no se haya seleccionado un elemento de la columna incorrecta
                 e[0].style = "background-color: #B0CEF5"
                 this.clicked += 1; //pasamos al siguiente elemento
+                first = key;
             }
         break;
         case 1:
             if(key > 6){
                 e[0].style = "background-color: #B0CEF5"
                 this.clicked += 1;
+                user_answer.push([first,key]);
             }
         break;
         case 2:
             if(key < 7){
                 e[0].style = "background-color: #9BFABD"
                 this.clicked += 1;
+                first = key;
             }
         break;
         case 3:
             if(key > 6){
                 e[0].style = "background-color: #9BFABD"
                 this.clicked += 1;
+                user_answer.push([first,key]);
             }
         break;
         case 4:
             if(key < 7){
                 e[0].style = "background-color: #F9FBA2"
                 this.clicked += 1;
+                first = key;
             }
         break;
         case 5:
             if(key > 6){
                 e[0].style = "background-color: #F9FBA2"
                 this.clicked += 1;
+                user_answer.push([first,key]);
             }
         break;
         case 6:
             if(key < 7){
                 e[0].style = "background-color:#fa5d57"
                 this.clicked += 1;
+                first = key;
             }
         break;
         case 7:
             if(key > 6){
                 e[0].style = "background-color: #fa5d57"
                 this.clicked += 1;
+                user_answer.push([first,key]);
             }
         break;
         case 8:
             if(key < 7){
                 e[0].style = "background-color: #fbdaa2"
                 this.clicked += 1;
+                first = key;
             }
         break;
         case 9:
             if(key > 6){
                 e[0].style = "background-color: #fbdaa2"
                 this.clicked += 1;
+                user_answer.push([first,key]);
             }
         break;
         case 10:
             if(key < 7){
                 e[0].style = "background-color: #fba2bb"
                 this.clicked += 1;
+                first = key;
             }
         break;
         case 11:
             if(key > 6 ){
                 e[0].style = "background-color: #fba2bb"
+                user_answer.push([first,key]);
             }
         break;
     }
-    
+}
+
+function Score(){
+    user_answer.sort();
+    var i;
+    mistakes = 0;
+    for(i=0;i<user_answer.length;i++){
+        if(JSON.stringify(user_answer[i])!=JSON.stringify(match[i])){
+            mistakes += 1;
+        }
+    }
+    if(mistakes>0){
+        answertext = "\nTienes " + mistakes + " errores";
+        alert(answertext);
+    }else{
+        alert("Todas tus respuestas son correctas!");
+    }
+    window.location.reload();
 }
 </script>
 
