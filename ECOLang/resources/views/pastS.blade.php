@@ -78,11 +78,16 @@
 }
 
 .button2 {
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  border: 2px solid #337ab7;
-  transition: all 0.3s ease 0s;
+  font-size: 30px;
+    color: white;
+    margin-left: 30px;
+    border: 2px solid rgb(51, 122, 183);
+    background-color: rgb(51, 122, 183);
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 20px;
 }
 
 button:hover{
@@ -128,7 +133,7 @@ button:hover{
 		      calif++;
 	    }
 	}
-		       answertext = answertext + "\nScore: " + calif;
+		       answertext = answertext + "\nCalificación: " + calif;
 		       alert(answertext);
            window.location.reload();
     }

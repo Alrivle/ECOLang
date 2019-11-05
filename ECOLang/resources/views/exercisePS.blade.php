@@ -78,16 +78,19 @@
 }
 
 .button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50; /* Green */
+  font-size: 30px;
+    color: white;
+    margin-left: 30px;
+    border: 2px solid rgb(51, 122, 183);
+    background-color: rgb(51, 122, 183);
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 20px;
 }
 
-.button3 {
-  background-color: white;
-  color: black;
-  border: 2px solid:grey; /* Green */
-}
+
 #outer
 {
     width:100%;
@@ -138,7 +141,7 @@
         var answertext="Resultado\n";
         calif = 0;
         for(i=1; i<=10; i++){
-      answertext = answertext + "\nPreguntas"+ i + ":";
+      answertext = answertext + "\nPregunta "+ i + ": ";
       if(res[i] != tures[i]){
                   answertext = answertext + explicares[i]+ "\n";
       }else{
@@ -146,8 +149,9 @@
           calif++;
       }
   }
-           answertext = answertext + "\nCalificacion:" + calif;
+           answertext = answertext + "\nCalificación: " + calif;
            alert(answertext);
+           window.location.reload();
     }
 
     function salir() {
@@ -327,8 +331,7 @@
       
       <br>
       <div align="center">
-      <button onclick="Score()" class="button2" >Finish</button>
-      <a style="cursor: pointer;" onclick="salir()">Cancel</a>
+      <button onclick="Score()" class="button2" >Check</button>
       </div>
       <br>
     </div>
