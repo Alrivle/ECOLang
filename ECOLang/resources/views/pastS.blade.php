@@ -141,7 +141,9 @@ button:hover{
 </head>
 <body marginheight="15">
 
-<nav class="navbar navbar">
+<nav class="navbar navbar" style="border-bottom-color: black;
+    border-bottom-width: thin;
+    border-bottom-style: solid;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
