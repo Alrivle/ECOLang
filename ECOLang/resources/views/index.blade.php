@@ -4,6 +4,7 @@
   <title>Ejercicios</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{asset('css/ejercicios.css')}}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -103,12 +104,12 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Log In</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
+<!--
 <div class="main" style="height: 100vh; overflow-y: auto;">
 	<div class="container">
 	  <h2 style="text-align: center;">Ejercicios y temas</h2></br>    
@@ -149,8 +150,29 @@
 	        </div>
 	      </div>
 	    </div>
-</div>
+</div>-->
+	<div class="title">
+		<h1>Temas</h1>
+	</div>
+	<body>
+    <div class="maincontainer">
 
+      <div class="thecard">
+
+        <div class="thefront">
+			<h1>Get</h1>
+			<p>This is the front of the card. It contains important information. Please see overleaf for more details.</p>
+		</div>
+
+        <div class="theback">
+		<li><a href="videos">Do you know get?</a></li>
+	    <li>Applications of get</li>
+	    <li>Vocabulary</li>
+	  </div>
+	  
+    </div>
+
+  </body>
 
 </body>
 </html>
