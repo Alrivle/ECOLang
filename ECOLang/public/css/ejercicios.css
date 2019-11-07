@@ -15,19 +15,53 @@
     text-align: center;
 }
 
-body{
-    background: #3C5377;
-    }
+.title h1{
+  font-size: 60px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer{
+.maincontainer1{
   position: absolute;
   width: 250px;
   height: 350px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top:55%;
+  left:15%;
+  transform: translate(-50%,-50%);
+}
 
+.maincontainer2{
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  top:50%;
+  left:82vh;
+  transform: translate(-50%,-50%);
+}
+
+.maincontainer3{
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  top:50%;
+  left:80vh;
+  transform: translate(-50%,-50%);
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
@@ -83,36 +117,117 @@ body{
   -webkit-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   overflow: hidden;
-  background: #3C5377;
+  background: #ffc728;
   color: white;
   text-align: center;
   transform: rotateY(180deg);
 }
 
+.thefront1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  overflow: hidden;
+  background: #ff9b28;
+  color: #000;
+}
+.theback1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+  background: #ff9b28;
+}
+
+.thefront2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  overflow: hidden;
+  background: #288cff;
+  color: #000;
+}
+.theback2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+  background: #288cff;
+}
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h1, .theback li{
+.thefront h1, .theback li, .thefront1 h1, .theback1 li, .thefront2 h1, .theback2 li{
   font-family: 'zilla slab', sans-serif;
   padding: 30px;
   font-weight: bold;
-  font-size: 24px;
   text-align: center;
 }
 
-.thefront p, .theback p{
-  font-family: 'zilla slab', sans-serif;
-  padding: 30px;
-  font-weight: normal;
-  font-size: 12px;
-  text-align: center;
+.thefront, .thefront1, .thefront2 h1{
+    font-size: 40px;
 }
 
-a:link {
-    color: white;
-    }
-a:visited {
-    color: green;
+.theback, .theback1, .theback2 li{
+    font-size: 20px;
+    margin-top: 8%;
 }
-    a:hover {
-    color: yellow;
-    }
+.thecard li{
+    list-style: none;
+}
+
+.thecard a:link {
+    color: black;
+}
+.thecard a:visited {
+    color: rgb(141, 5, 5);
+}
+.thecard a:hover {
+    color: rgb(255, 142, 142);
+    text-decoration: none;
+}
+
+.text-front{
+  margin-top: 43%;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+

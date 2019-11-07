@@ -70,9 +70,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar" style="border-bottom-color: black;
-    border-bottom-width: thin;
-    border-bottom-style: solid;">
+<nav class="navbar navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -157,21 +155,47 @@
 		<h1>Temas</h1>
 	</div>
 	<body>
-    <div class="maincontainer">
+  
+  <div class="maincontainer1">
+    <div class="thecard">
+      <div class="thefront">
+      <div class="text-front"></div>
+        <h1>Get</h1>
+		  </div>
+      
+      <div class="theback">
+		    <li><a href="videos">Do you know get?</a></li>
+	      <li><a href=#>Applications of get</a></li>
+	      <li><a href=#>Vocabulary</a></li>
+	    </div>
+    </div>
 
-      <div class="thecard">
+    <div class="maincontainer2">
+    <div class="thecard">
+      <div class="thefront1">
+      <div class="text-front"></div>
+        <h1>Simple Past</h1>
+		  </div>
+      
+      <div class="theback1">
+      <li> <a href="pastS"> Past simple </a> </li>
+	        		<li><a href="exercisePS">Exercises</a></li>
+	        		<li><a href="lecturaPS">Reading</a></li>
+	    </div>
+    </div>
 
-        <div class="thefront">
-			<h1>Get</h1>
-			<p>This is the front of the card. It contains important information. Please see overleaf for more details.</p>
-		</div>
-
-        <div class="theback">
-		<li><a href="videos">Do you know get?</a></li>
-	    <li>Applications of get</li>
-	    <li>Vocabulary</li>
-	  </div>
-	  
+    <div class="maincontainer3">
+    <div class="thecard">
+      <div class="thefront2">
+      <div class="text-front"></div>
+        <h1>Future Perfect</h1>
+		  </div>
+      
+      <div class="theback2">
+		    <li><a href="videos">Do you know get?</a></li>
+	      <li><a href=#>Applications of get</a></li>
+	      <li><a href=#>Vocabulary</a></li>
+	    </div>
     </div>
 
   </body>
