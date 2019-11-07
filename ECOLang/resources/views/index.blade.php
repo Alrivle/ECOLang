@@ -137,109 +137,18 @@
 	        </div>
 	      </div>
 	    </div>
-	    <div class="col-sm-4">
+		<div class="col-sm-4">
 	      <div class="panel panel-primary">
 	        <div class="panel-heading">Tema 3</div>
 	        <div class="panel-body"> 
 	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
+	        		<li> <a href="pastS"> Past simple </a> </li>
+	        		<li><a href="exercisePS">Exercises</a></li>
+	        		<li><a href="lecturaPS">Reading</a></li>
 	        	</ul>
 	        </div>
 	      </div>
 	    </div>
-		</div>
-	</div> <br><br>
-
-	<div class="container">
-	  <div class="row">
-	    <div class="col-sm-4">
-	      <div class="panel panel-primary">
-	        <div class="panel-heading">Tema 1</div>
-	        <div class="panel-body"> 
-	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
-	        	</ul>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-sm-4">
-	      <div class="panel panel-primary">
-	        <div class="panel-heading">Tema 2</div>
-	        <div class="panel-body"> 
-	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
-	        	</ul>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-sm-4">
-	      <div class="panel panel-primary">
-	        <div class="panel-heading">Tema 3</div>
-	        <div class="panel-body"> 
-	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
-	        	</ul>
-	        </div>
-	      </div>
-	    </div>
-		</div>
-	</div><br><br>
-	
-	<div class="container">
-	  <div class="row">
-	    <div class="col-sm-4">
-	      <div class="panel panel-primary">
-	        <div class="panel-heading">Tema 1</div>
-	        <div class="panel-body"> 
-	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
-	        	</ul>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-sm-4">
-	      <div class="panel panel-primary">
-	        <div class="panel-heading">Tema 2</div>
-	        <div class="panel-body"> 
-	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
-	        	</ul>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-sm-4">
-	      <div class="panel panel-primary">
-	        <div class="panel-heading">Tema 3</div>
-	        <div class="panel-body"> 
-	        	<ul class="ejercicios">
-	        		<li>Do you know get?</li>
-	        		<li>Applications of get</li>
-	        		<li>Vocabulary</li>
-	        	</ul>
-	        </div>
-	      </div>
-	    </div>
-	</div>
-	</div><br><br>
-<footer class="container-fluid text-center">
-  <p>Buscas algún otro tema?</p>  
-  <form class="form-inline">
-    <input class="form-control" size="50" placeholder="Busca el tema">
-    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-  </form>
-</footer>
 </div>
 
 
