@@ -133,6 +133,9 @@ button:hover{
     letter-spacing: 3px;
     }
 
+li{
+  list-style-type:none;
+}
     
 body{
   min-height: 100vh;

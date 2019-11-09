@@ -41,12 +41,12 @@
             <div class="face face1">
                 <div class="content content2">
                     <img src="{{asset('img/past.png')}}">
-                    <h1>Past Simple</h1>
+                    <h1>Simple Past</h1>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
-                  <li> <a href="pastS"> Past simple </a> </li>
+                  <li> <a href="pastS">Simple Past</a> </li>
 	        		    <li><a href="exercisePS">Exercises</a></li>
 	        		    <li><a href="lecturaPS">Reading</a></li>
                 </div>

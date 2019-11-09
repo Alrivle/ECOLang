@@ -4,9 +4,6 @@
   <title>Past Simple Excercises</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="prueba.js"></script>
   <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
@@ -112,6 +109,12 @@ body{
   background-attachment: fixed;
 }
 
+.title{
+  text-align: center;
+  font-size: 35px;
+  height: 80px;
+
+}
 .dropdown-submenu:hover>a:after {
     border-left-color: #fff;
 }
@@ -230,12 +233,9 @@ button:hover{
     </ul>
 </nav>
 
-<div class="container">    
-     <div class="row" align="center">
-     	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
-
-     </div>
-</div><br>
+<div class="title">
+    <h1>Ejercicios</h1>
+</div>
 
     
 
