@@ -227,7 +227,6 @@ button:hover{
     <ul class="nav-links">
         <a href="index"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo"></a>
         <li><a href=index>Temas</a></li>
-        <li><a href="">Ejercicios</a></li>
         <li><a href="">Juegos</a></li>
         <li><a href="login"><img class="logout" src="{{asset('img/logout.png')}}" alt="Logo"></a></li>
     </ul>

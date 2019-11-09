@@ -197,7 +197,6 @@ button:hover{
     <ul class="nav-links">
         <a href="index"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo"></a>
         <li><a href=index>Temas</a></li>
-        <li><a href="">Ejercicios</a></li>
         <li><a href="">Juegos</a></li>
         <li><a href="login"><img class="logout" src="{{asset('img/logout.png')}}" alt="Logo"></a></li>
     </ul>
@@ -313,6 +312,7 @@ function clickedEvent(e){
             if(key < 7){ //se verifica que no se haya seleccionado un elemento de la columna incorrecta
                 e[0].style = "background-color: #B0CEF5"
                 this.clicked += 1; //pasamos al siguiente elemento
+                user_answer = []
                 first = key;
             }
         break;
@@ -408,7 +408,12 @@ function Score(){
         answertext = "\nTienes " + mistakes + " errores";
         alert(answertext);
     }else{
-        alert("Todas tus respuestas son correctas!");
+        if(user_answer.length<5){
+            alert("Relaciona todos los elementos!");
+        }else{
+            console.log(user_answer);
+            alert("Todas tus respuestas son correctas!");
+        }
     }
     window.location.reload();
 }
