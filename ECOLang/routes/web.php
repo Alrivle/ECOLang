@@ -39,8 +39,8 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/signIn', function () {
-    return view('signIn');
+Route::get('/temas', function () {
+    return view('temas');
 });
 
 Route::get('/index', function () {

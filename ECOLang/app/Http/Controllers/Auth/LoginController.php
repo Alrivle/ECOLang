@@ -18,7 +18,7 @@ class LoginController extends Controller
             $data = DB::select('select id from users where email=? and password=?',[$email,$password]);
             if(count($data))
             {
-                return view('index');
+                return view('temas');
             }else{
                 return back()->withErrors(['password'=> 'Contraseña incorrecta'])
                          ->withInput(request(['email']));
