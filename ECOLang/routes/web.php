@@ -24,7 +24,6 @@ Route::get('/', function () {
 Route::get('/videos', function () {
     return view('videos');
 });
-<<<<<<< HEAD
 Route::get('/pastS', function () {
     return view('pastS');
 });
@@ -34,7 +33,6 @@ Route::get('/exercisePS', function () {
 Route::get('/lecturaPS', function () {
     return view('lecturaPS');
 });
-=======
 
 
 Route::get('/login', function () {
@@ -51,4 +49,3 @@ Route::get('/index', function () {
 
 Route::post('logINDB','Auth\LoginController@login')->name('logInDB');
 Route::post('register','Auth\RegisterController@create')->name('register');
->>>>>>> 724a537d29ecfdd97ab6c62deeb1959a2e8db63e

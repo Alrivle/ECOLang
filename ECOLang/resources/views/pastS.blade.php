@@ -21,8 +21,7 @@
     }
     .dropdown-submenu {
     position: relative;
-}
-
+}    
 .numeracion{
    font-size:20px;
    background: #DCDCDC;
@@ -30,7 +29,7 @@
 }
 
 .eg{
-   font-size:20px;	
+   font-size:15px;	
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -87,8 +86,64 @@
 
 button:hover{
     letter-spacing: 3px;
+    }
+
+    
+body{
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b2eca9' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
+    
+.balloon{
+    border-radius: 80%;
+    background-color:#7FFFD4;
+    color: black;
+    padding: 10px;
+    width: 620px;
+    border:10px;
+    position:relative;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    }
+
+    .balloon:before {
+     border: 25px solid #7FFFD4;
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -44px;
+    right: 80px;
+    transform: rotate(-10deg);
+    }
+
+.balloon2{
+    border-radius: 80%;
+    background-color:#7FFFD4;
+    color: black;
+    padding: 10px;
+    width: 620px;
+    border:10px;
+    position:relative;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    }
+
+    .balloon2:before {
+     border: 25px solid #7FFFD4;
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -44px;
+    left: 80px;
+    transform: rotate(15deg);
+    height:30px;
+    }
   </style>
+
+</head>
+<body  marginheight="15" class="eg">
 
 <script>
     var res = new Array;
@@ -127,13 +182,14 @@ button:hover{
 	}
 		       answertext = answertext + "\nScore: " + calif;
 		       alert(answertext);
-           window.location.reload();
-    }
+        
+	
+   
+    } 
   </script>
-</head>
-<body marginheight="15">
-
-<nav class="navbar navbar">
+<nav class="navbar navbar" style="border-bottom-color: black;
+    border-bottom-width: thin;
+    border-bottom-style: solid;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -178,100 +234,107 @@ button:hover{
      	  <h1 style="text-align: center;">Past Simple</h1></br>
 	  <div class="numeracion">
 		<ul>
-			<li type="disc" >We use past simple for actions, events or situations that are finished</li>
+			<li type="disc" > Hay!!!,We use past simple for actions, events or situations that are finished</li>
 		</ul>
 	  </div>
      </div>
 </div><br>
 
-<div class="container">    
+<div class="container" align="right">    
   <div class="row">
-    <h2>Examples</h2>
-    <div class="eg">
-    	 <ul>
-		<li>They <b> worked</b> hard</li>
-		<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
-		<li> <b>Did</b> you <b>played</b> soccer?</li>
-		<li>They <b>ate</b> a lot of cake in the party</li>
-	 </ul>
+    <div class="balloon">
+    
+    <div class="eg" align="center">
+      <h2>Examples</h2>
+      <ul>
+	<li>They <b> worked</b> hard</li>
+	<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
+	<li> <b>Did</b> you <b>played</b> soccer?</li>
+	<li>They <b>ate</b> a lot of cake in the party</li>
+      </ul>
+      </div>
     </div>
   </div>
 </div><br>
 
-<div class="container">    
-  <div class="row">
-    <h2  style="color:#056196">Remember:</h2>
-    <div class="eg">
-    	 <p>For regular verbs we add: 'ed' at the final of the verb.</p>
-    	 <ul>
-		<li>want - wanted</li>
-		<li>jump - jumped</li>
-		<li>watch - watched</li>
-	 </ul>
-	 <p>For irregular verbs, is a special case:</p>
-	 <ul>
-		<li>run - ran</li>
-		<li>drive - drove</li>
-		<li>take - took</li>
-	 </ul>
+<div class="container" id="fondo">    
+  <div class="row" >
+    <div class="balloon2">
+      
+      <div class="eg" align="center">
+	<h2  style="color:#056196">Remember:</h2>
+	<p>For regular verbs we add: 'ed' at the final of the verb.</p>
+    	<ul>
+	  <li>want - wanted</li>
+	  <li>jump - jumped</li>
+	  <li>watch - watched</li>
+	</ul>
+	<p>For irregular verbs, is a special case:</p>
+	<ul>
+	  <li>run - ran</li>
+	  <li>drive - drove</li>
+	  <li>take - took</li>
+	</ul>
+      </div>
     </div>
   </div>
 </div><br>
 
-<div class="container">    
+<div class="container" align="right">    
   <div class="row">
-    <h2  style="color:#F8436E">Be careful!!</h2>
-    <div class="eg">
-    <p>When we use the negative, we don’t change the main verb. We use ‘didn’t’ instead.</p>
-    	 <ul>
-		<li>I <b>didn't do</b> my homework</li>
-		<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
-		<li>We <b>didn't eat</b> pozole</li>
-		<li>They <b>didn't wait</b> their order</li>
-	 </ul>
+    <div class="balloon">
+      <div class="eg" align="center">
+	<h2  style="color:#F8436E">Be careful!!</h2>
+	<p>When we use the negative, we don’t change the main verb. We use ‘didn’t’ instead.</p>
+    	<ul>
+	  <li>I <b>didn't do</b> my homework</li>
+	  <li>She <b>didn't ran</b> 5 kilometers yesterday</li>
+	  <li>We <b>didn't eat</b> pozole</li>
+	  <li>They <b>didn't wait</b> their order</li>
+	</ul>
+      </div>
     </div>
-  </div>
 
+  </div>
+</div>
+<div>
   <div class="container" style="padding-bottom:100px">    
   <div class="row">
     <h2 >Ejercicios</h2>
     <div class="eg">
       <p>Select the correct option</p>
 
-      <ul>
-	<li>She ___ the piano yesterday.</li>
+      <ol>
+	<li value="1">She ___ the piano yesterday.</li>
 	<p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/>plays </p>
 	<p><input type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/>play </p>
 	<p><input type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/>played </p>
 
-	<li>I ___ pizza last week.</li>
+	<li value="2">I ___ pizza last week.</li>
 	<p><input type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/>eaten </p>
 	<p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/>ate </p>
 	<p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/>eat </p>
 
-	<li>You ___ milk the last saturday.</li>
+	<li value="3">You ___ milk the last saturday.</li>
 	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>drinks </p>
 	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>drank </p>
 	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>clean </p>
 
-	<li>He ___ in the last party.</li>
+	<li value="4">He ___ in the last party.</li>
 	<p><input type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/>didn't sing </p>
 	<p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/>sung </p>
 	<p><input type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/>jump</p>
 
-	<li>We ___ in the pool the last vacation.</li>
+	<li value="5">We ___ in the pool the last vacation.</li>
 	<p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/>swam </p>
 	<p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/>swimming </p>
 	<p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/>swim</p>
-      </ul>
-      <br>
+      </ol>
       <div align="center">
-      <button onclick="Score()" class="button2" >Check</button>
+	<button onclick="Score()" class="button2">CHECK</button>
       </div>
-      <br>
-    </div>
   </div>
-
+</div>
   
 
 </body>

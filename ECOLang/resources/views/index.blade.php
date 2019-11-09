@@ -64,12 +64,15 @@
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
-}
+    }
+
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar">
+<nav class="navbar navbar" style="border-bottom-color: black;
+    border-bottom-width: thin;
+    border-bottom-style: solid;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -122,7 +125,7 @@
 	        		<li>Applications of get</li>
 	        		<li>Vocabulary</li>
 	        	</ul>
-	        </div>
+	        </div> 
 	      </div>
 	    </div>
 	    <div class="col-sm-4">
