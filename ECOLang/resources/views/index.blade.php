@@ -9,15 +9,11 @@
 </head>
 <body>
 <nav>
-    <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
     <ul class="nav-links">
-        <li><a href="">Temas</a></li>
+        <a href="index"><img class="logo" src="{{asset('img/logo-r.png')}}" alt="Logo"></a>
+        <li><a href=index>Temas</a></li>
         <li><a href="">Ejercicios</a></li>
-        <li><a href="">Juegos</a></li>
+        <li><a href="login">Juegos</a></li>
     </ul>
 </nav>
 <div class="title">

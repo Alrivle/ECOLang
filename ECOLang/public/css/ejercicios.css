@@ -40,6 +40,13 @@ nav{
 .nav-links li a:hover{
   color: rgb(99, 183, 221);
 }
+
+.logo{
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  height:12.5vh;  
+}
 .title{
   text-align: center;
   font-size: 45px;
@@ -47,7 +54,6 @@ nav{
 
 }
 .container{
-  position: relative;
   display: flex;
   justify-content: space-evenly;
 }

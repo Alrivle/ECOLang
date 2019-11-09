@@ -16,6 +16,11 @@ html, body {
   background-position: center;
   }
 
+  @font-face {
+    font-family: "Report";
+    src: url("../font/Report.otf");
+  }
+
 .column{
     float: left;
     width: 50%;
@@ -26,7 +31,6 @@ html, body {
 
 h1{
     font-size: 60px;
-    font-family: "Helvetica";
     color: #337ab7;
 }
 
@@ -50,12 +54,9 @@ img{
     transform: translateY(-5px);
 }
 .slogan{
-    
     font-family: 'Kalam', cursive;
     font-size: 35px;
-    transform: translateX(-10px);
-    transform: translateY(-40px);
-    color: rgb(51, 122, 183);
+    color: rgb(47, 121, 187);
 }
 
 .vl {
@@ -85,8 +86,8 @@ input[type=text], input[type=password] {
     font-size: 30px;
     margin-bottom: 20px;
     border-radius: 50px;
-    font-family: "Helvetica";
     color: rgb(51, 122, 183);
+    font-family: "Report";
   }
 
 button{
@@ -100,12 +101,12 @@ button{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-top: 20px;
+    font-family: "Report";
 }
 
 .message{
     padding: 4vh;
     transform: translateX(15px);
-    font-family: "Helvetica";
     color: rgb(51, 122, 183);
     font-size: 17px;
 }
@@ -113,8 +114,7 @@ button:hover{
     letter-spacing: 3px;
 }
 
-.error{
-    font-family: "Helvetica";
+.error{ 
     color: rgb(202, 0, 0);
     font-size: 20px;
 }
