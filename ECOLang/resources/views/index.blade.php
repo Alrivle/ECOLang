@@ -13,7 +13,7 @@
         <a href="index"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo"></a>
         <li><a href=index>Temas</a></li>
         <li><a href="">Ejercicios</a></li>
-        <li><a href="login">Juegos</a></li>
+        <li><a href="">Juegos</a></li>
         <li><a href="login"><img class="logout" src="{{asset('img/logout.png')}}" alt="Logo"></a></li>
     </ul>
 </nav>
@@ -56,7 +56,7 @@
             <div class="face face1">
                 <div class="content content3">
                     <img src="{{asset('img/magic-ball.png')}}">
-                    <h1>Future Perfect</h1>
+                    <h1>Future</h1>
                 </div>
             </div>
             <div class="face face2">
