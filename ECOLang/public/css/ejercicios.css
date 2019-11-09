@@ -1,239 +1,101 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
 }
 
-
-.title{
-    margin-top: 50px;
-    position: absolute;
-    margin-left: 50%;
-    margin-right: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    text-align: center;
-}
-
-.title h1{
-  font-size: 60px;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer1{
-  position: absolute;
-  width: 250px;
-  height: 350px;
-  top:55%;
-  left:15%;
-  transform: translate(-50%,-50%);
-}
-
-.maincontainer2{
-  position: absolute;
-  width: 250px;
-  height: 350px;
-  top:50%;
-  left:82vh;
-  transform: translate(-50%,-50%);
-}
-
-.maincontainer3{
-  position: absolute;
-  width: 250px;
-  height: 350px;
-  top:50%;
-  left:80vh;
-  transform: translate(-50%,-50%);
-}
-
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
-.thecard{
+.container{
+  width: 1000px;
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 1s;
-  -o-transform-style: preserve-3d;
-  -o-transition: -o-transform 1s;
-  -moz-transform-style: preserve-3d;
-  -moz-transition: -moz-transform 1s;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-.thecard:hover{
-  transform: rotateY(180deg);
+.container .card{
+  position: relative;
+  cursor: pointer;
 }
 
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .thefront{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  overflow: hidden;
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  color: #000;
+.container .card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
 }
 
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-.theback{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  overflow: hidden;
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  color: white;
+.container .card .face.face1{
+  position: relative;
+  background: rgb(78, 77, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  background: #ff0057;
+  transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
   text-align: center;
-  transform: rotateY(180deg);
+  font-size: 1.5em;
 }
 
-.thefront1{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  overflow: hidden;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  color: #000;
-}
-.theback1{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  overflow: hidden;
-  color: white;
-  text-align: center;
-  transform: rotateY(180deg);
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
 }
 
-.thefront2{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  overflow: hidden;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-
-  color: #000;
-}
-.theback2{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  overflow: hidden;
-  color: white;
-  text-align: center;
-  transform: rotateY(180deg);
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-
+.container .card:hover .face.face2{
+  transform: translateY(0);
 }
 
-
-
-/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h1, .theback li, .thefront1 h1, .theback1 li, .thefront2 h1, .theback2 li{
-  font-family: 'zilla slab', sans-serif;
-  padding: 30px;
-  font-weight: bold;
-  text-align: center;
+.container .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
 }
 
-.thefront, .thefront1, .thefront2 h1{
-    font-size: 40px;
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
 }
 
-.theback, .theback1, .theback2 li{
-    font-size: 20px;
-    margin-top: 8%;
-}
-.thecard li{
-    list-style: none;
+.container .card .face.face2 .content a:hover{
+  color: #fff;
 }
 
-.thecard a:link {
-    color: black;
+img{
+  padding: 20px;
 }
-.thecard a:visited {
-    color: rgb(141, 5, 5);
-}
-.thecard a:hover {
-    color: rgb(255, 142, 142);
-    text-decoration: none;
-}
-
-.text-front{
-  margin-top: 43%;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
