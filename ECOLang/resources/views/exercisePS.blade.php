@@ -267,7 +267,7 @@ button:hover{
 
 
     <div class="eg">
-      <ul>
+      <ol>
   <li>She ___ to the Olympics.</li>
   <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> went</p>
   <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> want </p>
@@ -292,7 +292,7 @@ button:hover{
   <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> waited </p>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> run </p>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> go</p>
-      </ul>
+      </ol>
       <br>
 
 <div class="numeracion">
