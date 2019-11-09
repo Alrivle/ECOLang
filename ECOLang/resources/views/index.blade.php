@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="{{asset('css/ejercicios.css')}}">
 </head>
 <body>
+<!-- partial -->
+<div class="title">
+    <h1>Temas</h1>
+</div>
+<div class="cards-container">
     <div class="container">
         <div class="card">
             <div class="face face1">
-                <div class="content">
+                <div class="content content1">
                     <img src="{{asset('img/get.png')}}">
-                    <h3>Get</h3>
+                    <h1>Get</h1>
                 </div>
             </div>
             <div class="face face2">
@@ -26,9 +31,9 @@
         </div>
         <div class="card">
             <div class="face face1">
-                <div class="content">
+                <div class="content content2">
                     <img src="{{asset('img/past.png')}}">
-                    <h3>Past Simple</h3>
+                    <h1>Past Simple</h1>
                 </div>
             </div>
             <div class="face face2">
@@ -41,9 +46,9 @@
         </div>
         <div class="card">
             <div class="face face1">
-                <div class="content">
+                <div class="content content3">
                     <img src="{{asset('img/magic-ball.png')}}">
-                    <h3>Future Perfect</h3>
+                    <h1>Future Perfect</h1>
                 </div>
             </div>
             <div class="face face2">
@@ -54,6 +59,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
