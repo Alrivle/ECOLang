@@ -77,11 +77,16 @@
 }
 
 .button2 {
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  border: 2px solid #337ab7;
-  transition: all 0.3s ease 0s;
+  font-size: 30px;
+    color: white;
+    margin-left: 30px;
+    border: 2px solid rgb(51, 122, 183);
+    background-color: rgb(51, 122, 183);
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 20px;
 }
 
 button:hover{
@@ -157,12 +162,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     res[3]= "b";
     res[4]= "a";
     res[5]= "a";
+    
 
     explicares[1]= "The correct answer is c";
     explicares[2]= "The correct answer is b";
     explicares[3]= "The correct answer is b";
     explicares[4]= "The correct answer is a";
     explicares[5]= "The correct answer is a";
+    
+
 
     function Engine(question, answer){
         tures[question] = answer;
@@ -180,13 +188,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 		      calif++;
 	    }
 	}
-		       answertext = answertext + "\nScore: " + calif;
+		       answertext = answertext + "\nCalificación: " + calif;
 		       alert(answertext);
         
 	
    
     } 
   </script>
+</head>
+
+<body marginheight="15">
+
 <nav class="navbar navbar" style="border-bottom-color: black;
     border-bottom-width: thin;
     border-bottom-style: solid;">
@@ -304,6 +316,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     <div class="eg">
       <p>Select the correct option</p>
 
+<<<<<<< HEAD
       <ol>
 	<li value="1">She ___ the piano yesterday.</li>
 	<p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/>plays </p>

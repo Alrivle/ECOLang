@@ -8,6 +8,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="prueba.js"></script>
+  <script>
+    function onDragStart(event) {
+  event
+    .dataTransfer
+    .setData('text/plain', event.target.id);
+
+  event
+    .currentTarget
+    .style
+    .backgroundColor = 'yellow';
+}
+function onDragOver(event) {
+  event.preventDefault();
+}
+function onDrop(event) {
+  const id = event
+    .dataTransfer
+    .getData('text');
+
+  const draggableElement = document.getElementById(id);
+  const dropzone = event.target;
+  
+  dropzone.appendChild(draggableElement);
+
+  event
+    .dataTransfer
+    .clearData();
+}
+  </script>
   <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
     .navbar {
@@ -22,7 +51,21 @@
     .dropdown-submenu {
     position: relative;
 }
-
+#draggableSpan{
+  margin-left: 10vw;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: orange;
+}
+#respuestas{
+  border-style: solid;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+#respuestasc{
+  border-style: solid;
+  border-radius: 10px;
+}
 .dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
@@ -70,7 +113,9 @@
 </head>
 <body>
 
-<nav class="navbar navbar">
+<nav class="navbar navbar" style="border-bottom-color: black;
+    border-bottom-width: thin;
+    border-bottom-style: solid;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -116,7 +161,7 @@
     <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/ICQHcTMk1Lo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div><br>
-
+  
 <div class="container">    
   <div class="row">
     <h2>Respuestas</h2>
@@ -124,9 +169,26 @@
       <span id='draggableSpan'
         draggable='true'
         ondragstart='onDragStart(event);'>
-        draggable
+        respuesta 1
       </span>
 
+      <span id='draggableSpan'
+        draggable='true'
+        ondragstart='onDragStart(event);'>
+        respuesta 2
+      </span>
+
+      <span id='draggableSpan'
+        draggable='true'
+        ondragstart='onDragStart(event);'>
+        respuesta 3
+      </span>
+
+      <span id='draggableSpan'
+        draggable='true'
+        ondragstart='onDragStart(event);'>
+        respuesta 4
+      </span>
 
     </div>
   </div>
@@ -135,6 +197,8 @@
 <div class="container">
   <div class="row">
     <h2 style="text-align: center;">Preguntas</h2>
+    <h4 style="text-align: left;"> Instrucciones: </h4>
+    <p>Desliza las respuestas de la caja de respuestas a la pregunta correspondiente</p><br>
     <div class="col-sm-8"> 
       1.Que es get? <br><br>
       2.Porque se usa get? <br><br>
@@ -142,11 +206,42 @@
       4.I ____ to get around by bicycle, now I get around mostly on foot. <br><br>
     </div>
     <div class="col-sm-4">
-      <div class="parent">
-          <span
-          ondragover='onDragOver(event);'
-          ondrop='onDrop(event);'> dropzone </span>
+      <div class="row">
+        <div class="parent">
+            <span
+              ondragover='onDragOver(event);'
+              ondrop='onDrop(event);' id="respuestas"> Respuesta 1:
+            </span>
+            <br><br> 
+        </div>
       </div>
+      <div class="row">
+          <div class="parent">
+              <span
+                ondragover='onDragOver(event);'
+                ondrop='onDrop(event);' id="respuestas"> Respuesta 2:
+              </span>
+            <br><br> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="parent">
+              <span
+                ondragover='onDragOver(event);'
+                ondrop='onDrop(event);' id="respuestas"> Respuesta 3:
+              </span>
+              <br><br> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="parent">
+              <span
+                ondragover='onDragOver(event);'
+                ondrop='onDrop(event);' id="respuestas"> Respuesta 4: 
+              </span>
+              <br><br>
+          </div>
+        </div>
     </div>
   </div>
 </div>
