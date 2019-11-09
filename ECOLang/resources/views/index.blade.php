@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="{{asset('css/ejercicios.css')}}">
 </head>
 <body>
-<!-- partial -->
+<nav>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="">Temas</a></li>
+        <li><a href="">Ejercicios</a></li>
+        <li><a href="">Juegos</a></li>
+    </ul>
+</nav>
 <div class="title">
     <h1>Temas</h1>
 </div>
@@ -63,8 +74,5 @@
     </div>
 </body>
 
-<!--<footer><div>Icons made by <a href="https://www.flaticon.com/authors/mavadee" title="mavadee">mavadee</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
--->
+
 </html>
