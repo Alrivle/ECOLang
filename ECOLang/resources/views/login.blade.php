@@ -16,7 +16,7 @@
             <div class="column">
                 <div class="c1">
                 <p class="slogan">The best way to predict the future is to create it</p>
-                        <a href="index"><img class="logo" src="{{asset('img/logo-r.png')}}" alt="EcoLang Logo"></a>
+                        <a href="index"><img class="logo" src="{{asset('img/logo.png')}}" alt="EcoLang Logo"></a>
                 </div>  
             </div>
             <div class="vl"></div>

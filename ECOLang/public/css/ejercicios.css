@@ -41,9 +41,17 @@ nav{
   color: rgb(99, 183, 221);
 }
 
+.logout{
+  height: 4vh;
+}
+
+.logout:hover{
+  height: 4vh;
+}
+
 .logo{
   position: absolute;
-  left: 10px;
+  left: 20px;
   top: 0px;
   height:12.5vh;  
 }
