@@ -117,6 +117,7 @@ button:hover{
 .error{ 
     color: rgb(202, 0, 0);
     font-size: 20px;
+    width: 100%;
 }
 @media screen and (max-width:1000px) {
     h1{
