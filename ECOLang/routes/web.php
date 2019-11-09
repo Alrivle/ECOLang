@@ -24,10 +24,16 @@ Route::get('/', function () {
 Route::get('/videos', function () {
     return view('videos');
 });
-
+Route::get('/pastS', function () {
+    return view('pastS');
+});
+Route::get('/exercisePS', function () {
+    return view('exercisePS');
+});
 Route::get('/lecturaPS', function () {
     return view('lecturaPS');
 });
+
 
 Route::get('/login', function () {
     return view('login');
