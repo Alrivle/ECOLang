@@ -43,6 +43,12 @@
   height: 4vh;
 }
 
+.numeracion{
+   font-size:23px;
+   background:#20B2AA;
+	
+}
+
 .logout:hover{
   height: 4vh;
 }
@@ -63,14 +69,8 @@
     position: relative;
 }
 
-.numeracion{
-   font-size:20px;
-   background: #DCDCDC;
-	
-}
-
 .eg{
-   font-size:20px;	
+   font-size:23px;	
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -316,8 +316,8 @@ button:hover{
         <div class="eg" align="left">
 
 <div id="outer">
-    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> eat </button></div>
-    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> dance </button></div>
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> drink </button></div>
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> drunk </button></div>
     <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="border-color:Green;"/> drank </button></div>
 </div>
 

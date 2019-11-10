@@ -135,7 +135,7 @@ body{
    src: url('/font/Report.otf'); 
 }
 .lectura{
-   font-size:20px;
+   font-size:23px;
    font:Report;
 }
 
@@ -156,7 +156,10 @@ button:hover{
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
 }
-
+imagen{
+       float: left;
+       
+}
 .dropdown-submenu>a:after {
     display: block;
     content: " ";
@@ -223,8 +226,8 @@ button:hover{
     	     A baseball game was on TV. Billy and his dad started to eat the pizza in the living room. "I hope the Yankees lose," Billy told his dad. "I hope the Yankees lose, too," his dad said. 
 	   </p>
 	 </div>
-	 <div class="imagen">
-	   <img src="../pizza2.jpg"/>
+	 <div align="left">
+	   <img src="captura.png">
 	 </div>
     </div>
   </div>

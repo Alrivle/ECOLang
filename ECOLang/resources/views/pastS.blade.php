@@ -64,14 +64,17 @@
 }    
 .numeracion{
    font-size:20px;
-   background: #DCDCDC;
+   background:#20B2AA;
 	
 }
 
 .eg{
-   font-size:20px;	
+   font-size:23px;	
 }
 
+.eg2{
+   font-size:30px;	
+}
 .dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
@@ -295,7 +298,7 @@ body{
      	  <h1 style="text-align: center;">Past Simple</h1></br>
 	  <div class="numeracion">
 		<ul>
-			<li type="disc" > We use past simple for actions, events or situations that are finished</li>
+			<li type="disc" class="eg2"> We use past simple for actions, events or situations that are finished</li>
 		</ul>
 	  </div>
      </div>
@@ -346,7 +349,7 @@ body{
     <div class="balloon">
       <div class="eg" align="center">
 	<h2  style="color:#F8436E">Be careful!!</h2>
-	<p>When we use the negative, we don’t change the main verb. We use ‘didn’t’ instead.</p>
+	<p >When we use the negative, we don’t change the main verb. We use ‘didn’t’ instead.</p>
     	<ul>
 	  <li>I <b>didn't do</b> my homework</li>
 	  <li>She <b>didn't ran</b> 5 kilometers yesterday</li>
@@ -360,7 +363,7 @@ body{
 </div>
 <div>
   <div class="container" style="padding-bottom:100px">    
-<<<<<<< HEAD
+
     <div class="row">
       <div id="excercise-container">
 	<column id="column-one">
