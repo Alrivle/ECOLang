@@ -39,9 +39,50 @@ function onDrop(event) {
   </script>
   <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      border-radius: 0;
-    }
+    nav{
+  height: 12vh;
+  border-bottom: 3px solid rgb(189, 185, 190);
+}
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    @font-face {
+  font-family: "Report";
+  src: url("../font/Report.otf");
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  width: 30%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a{
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.nav-links li a:hover{
+  color: rgb(99, 183, 221);
+}
+
+.logout{
+  height: 4vh;
+}
+
+.logout:hover{
+  height: 4vh;
+}
+
+.logo{
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  height:12.5vh;  
+}
    
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -109,50 +150,28 @@ function onDrop(event) {
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+
+body{
+  min-height: 100vh;
+  align-items: center;
+  font-family: "Report";
+  background-image: url("../img/pencil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar" style="border-bottom-color: black;
-    border-bottom-width: thin;
-    border-bottom-style: solid;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index">
-        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="/">Temas</a></li>
-          <li class="dropdown-submenu">
-            <a tabindex="-1" href="#">Ejercicios</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Lecturas</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Estructuras</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Juegos</a></li>
-          <li><a href="#">Secciones extras</a></li>
-        </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
+<nav>
+    <ul class="nav-links">
+        <a href="temas"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo"></a>
+        <li><a href="temas">Temas</a></li>
+        <li><a href="">Juegos</a></li>
+        <li><a href="index"><img class="logout" src="{{asset('img/logout.png')}}" alt="Logo"></a></li>
+    </ul>
 </nav>
 
 <div class="container">    

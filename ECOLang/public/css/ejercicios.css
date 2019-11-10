@@ -40,6 +40,21 @@ nav{
 .nav-links li a:hover{
   color: rgb(99, 183, 221);
 }
+
+.logout{
+  height: 4vh;
+}
+
+.logout:hover{
+  height: 4vh;
+}
+
+.logo{
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  height:12.5vh;  
+}
 .title{
   text-align: center;
   font-size: 45px;
@@ -47,7 +62,6 @@ nav{
 
 }
 .container{
-  position: relative;
   display: flex;
   justify-content: space-evenly;
 }
@@ -106,7 +120,6 @@ nav{
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
   transform: translateY(-100px);
 }
 

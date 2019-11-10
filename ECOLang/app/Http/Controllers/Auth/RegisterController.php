@@ -40,7 +40,7 @@ class RegisterController extends Controller
                          ->withInput(request(['name']));
         }else{
             DB::insert('insert into users(name,email,password) values(?,?,?)',[$name,$email,$password]);
-            return view('index');
+            return view('temas');
         }
         
     }

@@ -10,10 +10,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  
   <style>
+       nav{
+  height: 12vh;
+  border-bottom: 3px solid rgb(189, 185, 190);
+}
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      border-radius: 0;
-    }
+    @font-face {
+  font-family: "Report";
+  src: url("../font/Report.otf");
+}
    
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -24,6 +29,51 @@
     position: relative;
 }
 
+.nav-links{
+  display: flex;
+  list-style: none;
+  width: 30%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a{
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.nav-links li a:hover{
+  color: rgb(99, 183, 221);
+}
+
+.logout{
+  height: 4vh;
+}
+
+.logout:hover{
+  height: 4vh;
+}
+
+.logo{
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  height:12.5vh;  
+}
+
+body{
+  min-height: 100vh;
+  align-items: center;
+  font-family: "Report";
+  background-image: url("../img/pencil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 .numeracion{
    font-size:20px;
    background: #DCDCDC;
@@ -137,56 +187,19 @@ button:hover{
     border-radius: 6px 0 6px 6px;
     }
 
-    body{
-    background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b2eca9' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
-    }
   </style>
 
 
 </head>
 <body>
 
-<nav class="navbar navbar" style="border-bottom-color: black;
-    border-bottom-width: thin;
-    border-bottom-style: solid;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index">
-        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="/">Temas</a></li>
-          <li class="dropdown-submenu">
-            <a tabindex="-1" href="#">Ejercicios</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Lecturas</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Estructuras</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Juegos</a></li>
-          <li><a href="#">Secciones extras</a></li>
-        </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
+<nav>
+    <ul class="nav-links">
+        <a href="temas"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo"></a>
+        <li><a href=temas>Temas</a></li>
+        <li><a href="">Juegos</a></li>
+        <li><a href="index"><img class="logout" src="{{asset('img/logout.png')}}" alt="Logo"></a></li>
+    </ul>
 </nav>
 
 <div class="container">    
@@ -211,7 +224,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	   </p>
 	 </div>
 	 <div class="imagen">
-	   <img src="pizza2.jpg"/>
+	   <img src="../pizza2.jpg"/>
 	 </div>
     </div>
   </div>
@@ -299,6 +312,7 @@ function clickedEvent(e){
             if(key < 7){ //se verifica que no se haya seleccionado un elemento de la columna incorrecta
                 e[0].style = "background-color: #B0CEF5"
                 this.clicked += 1; //pasamos al siguiente elemento
+                user_answer = []
                 first = key;
             }
         break;
@@ -394,7 +408,12 @@ function Score(){
         answertext = "\nTienes " + mistakes + " errores";
         alert(answertext);
     }else{
-        alert("Todas tus respuestas son correctas!");
+        if(user_answer.length<5){
+            alert("Relaciona todos los elementos!");
+        }else{
+            console.log(user_answer);
+            alert("Todas tus respuestas son correctas!");
+        }
     }
     window.location.reload();
 }
