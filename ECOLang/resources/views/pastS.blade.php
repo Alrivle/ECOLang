@@ -29,7 +29,7 @@
 }
 
 .eg{
-   font-size:15px;	
+   font-size:20px;	
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -75,6 +75,39 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+#exercise-container{
+    display: flex;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #E2ECFF;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+#column-one{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#column-two{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.column-element{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+}
 
 .button2 {
   font-size: 30px;
@@ -94,9 +127,9 @@ button:hover{
     }
 
     
-body{
-background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b2eca9' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+    body{
+    background-color: #dcdcdc;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2399e4f1' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
     
 .balloon{
@@ -180,20 +213,21 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         var answertext="Resultado\n";
         calif = 0;
         for(i=1; i<=5; i++){
-	    answertext = answertext + "\nQuestion "+ i + ": ";
-	    if(res[i] != tures[i]){
-                  answertext = answertext + explicares[i]+ "\n";
-	    }else{
-		      answertext = answertext + "Correct !!\n";
-		      calif++;
-	    }
-	}
-		       answertext = answertext + "\nCalificación: " + calif;
-		       alert(answertext);
-        
-	
-   
-    } 
+	   var cadena ='';	   
+	   var pregunta = document.getElementById(cadena+i);
+	   //answertext = answertext + "\nQuestion "+ i + ": ";
+	   if(res[i] != tures[i]){
+             //      answertext = answertext + explicares[i]+ "\n";
+	   	   pregunta.style.color = "#F8436E";
+	   }else{
+		   //answertext = answertext + "Correct !!\n";
+		   pregunta.style.color = "#228B22";
+		   calif++;
+	   }
+	 }
+	 //answertext = answertext + "\nCalificación: " + calif;
+	// alert(answertext);
+} 
   </script>
 </head>
 
@@ -246,7 +280,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
      	  <h1 style="text-align: center;">Past Simple</h1></br>
 	  <div class="numeracion">
 		<ul>
-			<li type="disc" > Hay!!!,We use past simple for actions, events or situations that are finished</li>
+			<li type="disc" > We use past simple for actions, events or situations that are finished</li>
 		</ul>
 	  </div>
      </div>
@@ -311,44 +345,49 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 <div>
   <div class="container" style="padding-bottom:100px">    
-  <div class="row">
-    <h2 >Ejercicios</h2>
-    <div class="eg">
-      <p>Select the correct option</p>
+    <div class="row">
+      <div id="excercise-container">
+	<column id="column-one">
+	  <h2 >Ejercicios</h2>
+	  <div class="eg">
+	    <p>Select the correct option</p>
 
-<<<<<<< HEAD
-      <ol>
-	<li value="1">She ___ the piano yesterday.</li>
-	<p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/>plays </p>
-	<p><input type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/>play </p>
-	<p><input type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/>played </p>
+	    <ol>
+	      <li value="1" id="1">She ___ the piano yesterday.</li>
+	      <p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/>plays </p>
+	      <p><input type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/>play </p>
+	      <p><input type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/>played </p>
 
-	<li value="2">I ___ pizza last week.</li>
-	<p><input type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/>eaten </p>
-	<p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/>ate </p>
-	<p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/>eat </p>
+	      <li value="2" id="2">I ___ pizza last week.</li>
+	      <p><input type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/>eaten </p>
+	      <p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/>ate </p>
+	      <p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/>eat </p>
 
-	<li value="3">You ___ milk the last saturday.</li>
-	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>drinks </p>
-	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>drank </p>
-	<p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>clean </p>
+	      <li value="3" id="3">You ___ milk the last saturday.</li>
+	      <p><input type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/>drinks </p>
+	      <p><input type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/>drank </p>
+	      <p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>clean </p>
 
-	<li value="4">He ___ in the last party.</li>
-	<p><input type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/>didn't sing </p>
-	<p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/>sung </p>
-	<p><input type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/>jump</p>
+	      <li value="4" id="4">He ___ in the last party.</li>
+	      <p><input type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/>didn't sing </p>
+	      <p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/>sung </p>
+	      <p><input type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/>jump</p>
 
-	<li value="5">We ___ in the pool the last vacation.</li>
-	<p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/>swam </p>
-	<p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/>swimming </p>
-	<p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/>swim</p>
-      </ol>
-      <div align="center">
-	<button onclick="Score()" class="button2">CHECK</button>
+	      <li value="5" id="5">We ___ in the pool the last vacation.</li>
+	      <p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/>swam </p>
+	      <p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/>swimming </p>
+	      <p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/>swim</p>
+	    </ol>
+	  </column>
+	  
+	  <column id="column-two">
+	    <button onclick="Score()" class="button2">CHECK</button>
+
+	  </column>
+
       </div>
-  </div>
+    </div>
+  </div>   
 </div>
-  
-
 </body>
 </html>
