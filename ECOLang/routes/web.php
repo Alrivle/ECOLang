@@ -18,6 +18,10 @@ Route::get('/exercisePS', function () {
     return view('exercisePS');
 });
 
+Route::get('/signIn', function () {
+    return view('signIn');
+});
+
 Route::get('/', function () {
     return view('index');
 });
