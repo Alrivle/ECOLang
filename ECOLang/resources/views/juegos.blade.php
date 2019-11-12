@@ -28,16 +28,14 @@
 </div>
 <div class="card1">
   <img src="{{asset('img/languages.png')}}" alt="Dictionary">
-  <div class="subtitle">
-  <h2><a href="vocabulary">Vocabulary</a></h2>
-  </div>
+  <h2>Vocabulary</h2>
+  <button onclick="window.location.href='vocabulary'">Start</button>
 </div>
 
 <div class="card3">
   <img src="{{asset('img/hangman-game.png')}}" alt="HangMan Game">
-  <div class="subtitle">
-  <h2><a href="">Hang Man</a></h2>
-  </div>
+  <h2>Hang Man</h2>
+  <button onclick="window.location.href='b.php'">Start</button>
 </div>
 </div>
 </body>

@@ -5,6 +5,11 @@ body {
   -webkit-transform-style: preserve-3d;
 }
 
+@font-face {
+  font-family: "Report";
+  src: url("../font/Report.otf");
+}
+
 .card1 {
   text-align:center;
   position: absolute;
@@ -18,14 +23,14 @@ body {
 }
 .card1 img, .card3 img{
   margin-top:20px;
-  width:200px;
+  width:180px;
   height:120px;
 }
 
 .card3 img{
-  width:100%;
+  width:90%;
 }
-h2 a{
+h2{
   font-size:25px;
   color:rgb(255,255,255);
   text-shadow: 0 0 2px rgb(255,255,255);
@@ -33,6 +38,19 @@ h2 a{
   text-decoration: none;
 }
 
+button{
+  background-image: linear-gradient( 179.5deg,  rgba(255,230,69,1) 3.3%, rgba(255,157,73,1) 96% );
+  font-size: 25px;
+  border-radius: 15px;
+  border: none;
+  width: 90px;
+  cursor: pointer;
+  font-family: "Report";
+}
+
+button:hover{
+  opacity: 0.8;
+}
 
 .card3 {
   text-align:center;
@@ -46,10 +64,6 @@ h2 a{
   padding: 20px;
 }
 
-.subtitle{
-    padding:20%;
-}
-
-.subtitle a:hover{
-    letter-spacing: 5px;
+.card3:hover, .card1:hover{
+  transform: scale(1.2);
 }

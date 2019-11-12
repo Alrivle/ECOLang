@@ -65,7 +65,6 @@ body{
         </div>
         
         <div class="button-container">
-          <button class="refresh"><i class="fa fa-angle-left"></i></button>
           <button class="refresh"><i class="fa fa-angle-right"></i></button>
         </div>
 

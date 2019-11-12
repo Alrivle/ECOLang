@@ -73,7 +73,7 @@ nav{
 }
 
 .container .card .face{
-  width: 310px;
+  width: 390px;
   height: 200px;
   transition: 0.5s;
 }
@@ -157,7 +157,7 @@ nav{
 
 .content2 img, .content3 img{
   padding: 20px;
-  margin-left: 78px;
+  margin-left: 130px;
 }
 
 .content1{

@@ -23,7 +23,7 @@
     <div class="container">
         <div class="card">
             <div class="face face1">
-                <div class="content content1">
+                <div class="content content3">
                     <img src="{{asset('img/get.png')}}">
                     <h1>Get</h1>
                 </div>
@@ -47,20 +47,6 @@
                   <li> <a href="pastS">Simple Past</a> </li>
 	        		    <li><a href="exercisePS">Exercises</a></li>
 	        		    <li><a href="lecturaPS">Reading</a></li>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content content3">
-                    <img src="{{asset('img/jogging.png')}}">
-                    <h1>Verbs</h1>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                  <li><a href="regularV">Regular Verbs</a></li>
-	                <li><a href=#>Irregular Verbs</a></li>
                 </div>
             </div>
         </div>
