@@ -50,6 +50,7 @@
   background:rgb(195, 195, 196);
   width:90%;
   margin:auto;
+  margin-bottom:40px;
 }
 
 
@@ -77,12 +78,6 @@ body{
   background-attachment: fixed;
 }
 
-.title{
-  text-align: center;
-  font-size: 35px;
-  height: 80px;
-
-}
 
 .button2 {
   font-size: 25px;
@@ -102,12 +97,6 @@ body{
 button:hover{
     letter-spacing: 3px;
 }
-
-.title{
-      padding:30px;
-      font-size:40px;
-      font-weight:bold;
-    }
 
 #outer
 {

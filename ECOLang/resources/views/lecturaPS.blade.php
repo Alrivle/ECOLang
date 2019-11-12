@@ -21,15 +21,6 @@
   font-family: "Report";
   src: url("../font/Report.otf");
 }
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .dropdown-submenu {
-    position: relative;
-}
 
 .nav-links{
   display: flex;
@@ -101,7 +92,7 @@ body{
     margin-right:10%;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #E2ECFF;
+    background-color: rgb(210, 226, 255);;
     
 }
 
@@ -132,65 +123,24 @@ body{
    font-size:20px;	
 }
 
+.title{
+  text-align: center;
+  font-size: 35px;
+  height: 80px;
+
+}
+
 @font-face{
    font-family:'Report';
    src: url('/font/Report.otf'); 
 }
 .lectura{
-   font-size:23px;
-   font:Report;
+   font-size:25px;
 }
 
 button:hover{
     letter-spacing: 3px;
 }
-
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-imagen{
-       float: left;
-       
-}
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-}
-
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-    }
 
   </style>
 
@@ -209,7 +159,7 @@ imagen{
 
 <div class="container">    
      <div class="row" align="center">
-     	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
+     	  <h1 style="text-align: center; font-size:65px;">Reading</h1></br>
 	  <div class="numeracion">
 	  </div>
      </div>
@@ -217,9 +167,8 @@ imagen{
 
 <div class="container">    
   <div class="row">
-    <h2>Reading</h2>
     <div class="lectura">
-    	 <h3 align="center">The Pizza</h3>
+    	 <h1 style="margin-top:-30px; font-size:43px;" align="center">The Pizza</h3>
     	 <div class="lectura">
 	   <p   >
     	     "	Daddy, let's order a pizza," Billy said. "That sounds like a good idea," said his dad.
@@ -241,7 +190,10 @@ imagen{
     <div class="eg">
     	 <p>Match the two parts of these sentences.</p>
 
-	 <div id="exercise-container">
+	 <div id="exercise-container" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+ unselectable="on"
+ onselectstart="return false;" 
+ onmousedown="return false;">
 	   <column
                 v-bind:things='questions'
                 @clicked='clickedEvent'
