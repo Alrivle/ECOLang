@@ -5,78 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{asset('css/pushbar.css')}}">
+  <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  
   <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      border-radius: 0;
-    }
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .dropdown-submenu {
-    position: relative;
-}
 
 .numeracion{
    font-size:20px;
    background: #DCDCDC;
 	
 }
-
-.eg{
-   font-size:20px;	
-}
-
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-}
-
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
-
 .button2 {
   font-size: 30px;
     color: white;
@@ -93,7 +33,7 @@
 button:hover{
     letter-spacing: 3px;
 }
-  </style>
+</style>
 
 <script>
     var res = new Array;
@@ -141,47 +81,29 @@ button:hover{
 </head>
 <body marginheight="15">
 
-<nav class="navbar navbar" style="border-bottom-color: black;
-    border-bottom-width: thin;
-    border-bottom-style: solid;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index">
-        <img src="{{asset('img/logo.jpeg')}}" alt="logo" style="width:6vh; margin: -6px;"/>
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Secciones
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="/">Temas</a></li>
-          <li class="dropdown-submenu">
-            <a tabindex="-1" href="#">Ejercicios</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Lecturas</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Estructuras</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Juegos</a></li>
-          <li><a href="#">Secciones extras</a></li>
-        </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<nav class="navbar navbar" id="barra">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index">
+            <img src="{{asset('img/logo.jpeg')}}" alt="logo" id="navlogo"/>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
+            <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
 
 <div class="container">    
      <div class="row" align="center">
@@ -282,7 +204,37 @@ button:hover{
     </div>
   </div>
 
-  
+  <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+          <div class="btn-cerrar">
+            <button data-pushbar-close><i class="fas fa-times"> </i></button>
+          </div>
+          <nav>
+            <ul id="menudesplasable">
+             <li><a href="/">Temas</a></li> 
+             <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
+              <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Lecturas</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Estructuras</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Juegos</a></li>
+              <li><a href="#">Secciones extras</a></li>
+            </ul>
+          </li>
+          </ul>
+        </nav>
+      </div>
 
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="{{asset('js/pushbar.js')}}"></script>
+  <script>
+    var pushbar = new Pushbar({
+      blur: false,
+      overlay: false
+    });
+  </script>
 </body>
 </html>
