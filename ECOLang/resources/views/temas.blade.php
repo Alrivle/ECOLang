@@ -54,8 +54,8 @@
         <div class="card">
             <div class="face face1">
                 <div class="content content3">
-                    <img src="{{asset('img/magic-ball.png')}}">
-                    <h1>Future</h1>
+                    <img src="{{asset('img/jogging.png')}}">
+                    <h1>Verbs</h1>
                 </div>
             </div>
             <div class="face face2">
