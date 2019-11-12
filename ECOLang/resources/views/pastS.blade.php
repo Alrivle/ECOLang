@@ -11,7 +11,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  
   <style>
-<<<<<<< HEAD
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
     nav{
   height: 12vh;
@@ -65,15 +64,11 @@
     .dropdown-submenu {
     position: relative;
 }    
-=======
-
->>>>>>> CarlosV2
 .numeracion{
    font-size:20px;
    background:#20B2AA;
 	
 }
-<<<<<<< HEAD
 
 .eg{
    font-size:23px;	
@@ -159,8 +154,6 @@
     border-radius: 8px;
 }
 
-=======
->>>>>>> CarlosV2
 .button2 {
   font-size: 30px;
     color: white;
@@ -294,7 +287,6 @@ body{
 
 <body marginheight="15">
 
-<<<<<<< HEAD
 <nav>
     <ul class="nav-links">
         <a href="temas"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo"></a>
@@ -303,35 +295,9 @@ body{
         <li><a href="index"><img class="logout" src="{{asset('img/logout.png')}}" alt="Logo"></a></li>
     </ul>
 </nav>
-=======
-<nav class="navbar navbar" id="barra">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="index">
-            <img src="{{asset('img/logo.jpeg')}}" alt="logo" id="navlogo"/>
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
-            <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
-          </ul>
-        </div>
-      </div>
-  </nav>
-
->>>>>>> CarlosV2
 <div class="container">    
      <div class="row" align="center">
-     	  <h1 style="text-align: center;">Past Simple</h1></br>
+     	  <h1 style="text-align: center;">Simple Past</h1></br>
 	  <div class="numeracion">
 		<ul>
 			<li type="disc" class="eg2"> We use past simple for actions, events or situations that are finished</li>
@@ -418,7 +384,6 @@ body{
 	      <p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/>ate </p>
 	      <p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/>eat </p>
 
-<<<<<<< HEAD
 	      <li value="3" id="3">You ___ milk the last saturday.</li>
 	      <p><input type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/>drinks </p>
 	      <p><input type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/>drank </p>
@@ -444,39 +409,5 @@ body{
     </div>
   </div>   
 </div>
-=======
-  <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
-          <div class="btn-cerrar">
-            <button data-pushbar-close><i class="fas fa-times"> </i></button>
-          </div>
-          <nav>
-            <ul id="menudesplasable">
-             <li><a href="/">Temas</a></li> 
-             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
-              <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Lecturas</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Estructuras</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Juegos</a></li>
-              <li><a href="#">Secciones extras</a></li>
-            </ul>
-          </li>
-          </ul>
-        </nav>
-      </div>
-
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src="{{asset('js/pushbar.js')}}"></script>
-  <script>
-    var pushbar = new Pushbar({
-      blur: false,
-      overlay: false
-    });
-  </script>
->>>>>>> CarlosV2
 </body>
 </html>
