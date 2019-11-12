@@ -12,7 +12,7 @@
  
   <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    nav{
+nav{
   height: 12vh;
   border-bottom: 3px solid rgb(189, 185, 190);
 }
@@ -64,18 +64,16 @@
     .dropdown-submenu {
     position: relative;
 }    
-.numeracion{
-   font-size:20px;
-   background:#20B2AA;
-	
-}
+
 
 .eg{
-   font-size:23px;	
+   font-size:25px;	
 }
 
 .eg2{
-   font-size:30px;	
+  background:rgb(212, 212, 213);
+  width:80%;
+  font-size:33px;	
 }
 .dropdown-submenu>.dropdown-menu {
     top: 0;
@@ -124,7 +122,7 @@
     display: flex;
     margin-left:10%;
     margin-right:10%;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 40px;
     background-color: #E2ECFF;
     
@@ -154,17 +152,22 @@
     border-radius: 8px;
 }
 
+.ejercicios-container{
+  margin:auto;
+  margin-top:10px;
+  margin-bottom:50px;
+  background-color:rgb(212, 212, 213);
+  width:75%;
+}
+
 .button2 {
-  font-size: 30px;
-    color: white;
-    margin-left: 30px;
-    border: 2px solid rgb(51, 122, 183);
-    background-color: rgb(51, 122, 183);
-    padding: 9px 25px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  border: 2px solid rgb(51, 122, 183);
+  background-color: rgb(51, 122, 183);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 button:hover{
@@ -187,50 +190,55 @@ body{
 }
     
 .balloon{
-    border-radius: 80%;
-    background-color:#7FFFD4;
+    border-radius: 60%;
+    background-color:#bdf593;
     color: black;
-    padding: 10px;
-    width: 620px;
+    padding:20px;
+    width: 50%;
     border:10px;
     position:relative;
     box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    margin-bottom:30px;
     }
 
     .balloon:before {
-     border: 25px solid #7FFFD4;
+    border: 45px solid #bdf593;
     content: '';
     border-left-color: transparent;
     border-bottom-color: transparent;
     border-right-color: transparent;
     position: absolute;
-    bottom: -44px;
-    right: 80px;
-    transform: rotate(-10deg);
+    bottom: 19px;
+    right: -35px;
+    transform: rotate(-45deg);
     }
 
+    .title{
+      padding:30px;
+      font-size:40px;
+      font-weight:bold;
+    }
 .balloon2{
-    border-radius: 80%;
-    background-color:#7FFFD4;
+    border-radius: 50%;
+    background:#ebe7e2;
     color: black;
     padding: 10px;
-    width: 620px;
+    width: 720px;
     border:10px;
     position:relative;
     box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
     }
 
     .balloon2:before {
-     border: 25px solid #7FFFD4;
+    border: 45px solid #ebe7e2;
     content: '';
     border-left-color: transparent;
     border-bottom-color: transparent;
     border-right-color: transparent;
     position: absolute;
-    bottom: -44px;
-    left: 80px;
-    transform: rotate(15deg);
-    height:30px;
+    bottom: -13px;
+    left: 35px;
+    transform: rotate(43deg);
     }
   </style>
 
@@ -297,21 +305,18 @@ body{
 </nav>
 <div class="container">    
      <div class="row" align="center">
-     	  <h1 style="text-align: center;">Simple Past</h1></br>
-	  <div class="numeracion">
+     	  <h1 style="text-align: center; font-size:65px;">Simple Past</h1></br>
 		<ul>
-			<li type="disc" class="eg2"> We use past simple for actions, events or situations that are finished</li>
+			<li class="eg2"> We use past simple for actions, events or situations that are finished</li>
 		</ul>
-	  </div>
      </div>
 </div><br>
 
 <div class="container" align="right">    
   <div class="row">
     <div class="balloon">
-    
     <div class="eg" align="center">
-      <h2>Examples</h2>
+      <h1>Examples</h1>
       <ul>
 	<li>They <b> worked</b> hard</li>
 	<li>She <b>didn't ran</b> 5 kilometers yesterday</li>
@@ -328,18 +333,16 @@ body{
     <div class="balloon2">
       
       <div class="eg" align="center">
-	<h2  style="color:#056196">Remember:</h2>
+	<h1  style="color:#056196">Remember:</h1>
 	<p>For regular verbs we add: 'ed' at the final of the verb.</p>
     	<ul>
 	  <li>want - wanted</li>
-	  <li>jump - jumped</li>
 	  <li>watch - watched</li>
 	</ul>
 	<p>For irregular verbs, is a special case:</p>
 	<ul>
 	  <li>run - ran</li>
 	  <li>drive - drove</li>
-	  <li>take - took</li>
 	</ul>
       </div>
     </div>
@@ -350,8 +353,9 @@ body{
   <div class="row">
     <div class="balloon">
       <div class="eg" align="center">
-	<h2  style="color:#F8436E">Be careful!!</h2>
-	<p >When we use the negative, we don’t change the main verb. We use ‘didn’t’ instead.</p>
+	<h1  style="color:#F8436E">Be careful!!</h1>
+	<p >When we use the negative, we
+  don’t change the main verb. We use ‘didn’t’ instead.</p>
     	<ul>
 	  <li>I <b>didn't do</b> my homework</li>
 	  <li>She <b>didn't ran</b> 5 kilometers yesterday</li>
@@ -363,51 +367,41 @@ body{
 
   </div>
 </div>
-<div>
-  <div class="container" style="padding-bottom:100px">    
+<div class="ejercicios-container">  
+  <h1 class="title" align="center">Ejercicios</h1>
+  <p style="font-size:30px;" align="center">Select the correct option</p>
+  <div class="row">
+    <div class="col-md-5 col-md-offset-2">
+        <li value="1" id="1">She ___ the piano yesterday.</li>
+        <p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> plays </p>
+        <p><input type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> play </p>
+        <p><input type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> played </p>
 
-    <div class="row">
-      <div id="excercise-container">
-	<column id="column-one">
-	  <h2 >Ejercicios</h2>
-	  <div class="eg">
-	    <p>Select the correct option</p>
+        <li value="2" id="2">I ___ pizza last week.</li>
+        <p><input type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> eaten </p>
+        <p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> ate </p>
+        <p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> eat </p>
 
-	    <ol>
-	      <li value="1" id="1">She ___ the piano yesterday.</li>
-	      <p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/>plays </p>
-	      <p><input type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/>play </p>
-	      <p><input type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/>played </p>
-
-	      <li value="2" id="2">I ___ pizza last week.</li>
-	      <p><input type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/>eaten </p>
-	      <p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/>ate </p>
-	      <p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/>eat </p>
-
-	      <li value="3" id="3">You ___ milk the last saturday.</li>
-	      <p><input type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/>drinks </p>
-	      <p><input type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/>drank </p>
-	      <p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/>clean </p>
-
-	      <li value="4" id="4">He ___ in the last party.</li>
-	      <p><input type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/>didn't sing </p>
-	      <p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/>sung </p>
-	      <p><input type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/>jump</p>
-
-	      <li value="5" id="5">We ___ in the pool the last vacation.</li>
-	      <p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/>swam </p>
-	      <p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/>swimming </p>
-	      <p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/>swim</p>
-	    </ol>
-	  </column>
-	  
-	  <column id="column-two">
-	    <button onclick="Score()" class="button2">CHECK</button>
-
-	  </column>
-      </div>
+        <li value="3" id="3">You ___ milk the last saturday.</li>
+        <p><input type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/> drinks </p>
+        <p><input type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/> drank </p>
+        <p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
     </div>
-  </div>   
+    <div class="col-md-offset-2">
+          <li value="4" id="4">He ___ in the last party.</li>
+          <p><input type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> didn't sing </p>
+          <p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> sung </p>
+          <p><input type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> jump</p>
+
+         <li value="5" id="5">We ___ in the pool the last vacation.</li>
+        <p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> swam </p>
+        <p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> swimming </p>
+        <p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> swim</p>
+        <br>
+        <br>
+        <button onclick="Score()" class="button2">Revisar</button>
+    </div>
+  </div>
 </div>
 </body>
 </html>
