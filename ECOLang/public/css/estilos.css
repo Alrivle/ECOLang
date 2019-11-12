@@ -119,16 +119,16 @@ background-color: #ffffff;
 }
 
 .button2 {
-  font-size: 30px;
+  font-size: 25px;
     color: white;
-    margin-left: 30px;
     border: 2px solid rgb(51, 122, 183);
     background-color: rgb(51, 122, 183);
     padding: 9px 25px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    margin-top: 20px;
+    margin: auto;
+    margin-top: -10vh;
 }
 
 button:hover{
@@ -172,28 +172,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 #exercise-container{
     display: flex;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: #E2ECFF;
-    box-shadow: 10px 5px 10px 3px #888888;
+    background-color:rgb(212, 212, 213);
+    margin: auto;
+    font-family: "Report";
+    border-radius: 20px;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
-}
-
-#column-one{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#column-two{
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
 .column-element{
     margin-top: 4vh;
@@ -209,4 +193,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
    font-size:20px;
    font-family:'Report';
    src: url(/font/);
+}
+
+.imagen-lectura{
+  width: 35%;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: "Report";
+  src: url("../font/Report.otf");
 }

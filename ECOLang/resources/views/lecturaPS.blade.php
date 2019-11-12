@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  
   <style>
-       nav{
+nav{
   height: 12vh;
   border-bottom: 3px solid rgb(189, 185, 190);
 }
@@ -73,54 +73,29 @@ body{
 	
 }
 
-.button2 {
-    font-size: 30px;
-    color: white;
-    margin-left: 30px;
-    border: 2px solid rgb(51, 122, 183);
-    background-color: rgb(51, 122, 183);
-    padding: 9px 25px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-top: 20px;
-}
-
-#exercise-container{
-    display: flex;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: rgb(210, 226, 255);;
-    
-}
-
 .column{
     display: flex;
     flex-direction: column;
 }
 
 #column-one{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin:auto;
 }
 
 #column-two{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin:auto;
 }
 
 .column-element{
     margin-top: 4vh;
     margin-bottom: 4vh;
     text-align: center;
-    font-size: 25px;
+    font-size: 27px;
     cursor: pointer;
     border-radius: 8px;
 }
 .eg{
-   font-size:20px;	
+   font-size:23px;	
 }
 
 .title{
@@ -177,8 +152,8 @@ button:hover{
     	     A baseball game was on TV. Billy and his dad started to eat the pizza in the living room. "I hope the Yankees lose," Billy told his dad. "I hope the Yankees lose, too," his dad said. 
 	   </p>
 	 </div>
-	 <div align="left">
-	   <img src="captura.png">
+	 <div align="center">
+	   <img class="imagen-lectura" src="{{asset('img/pizza.jpeg')}}">
 	 </div>
     </div>
   </div>
@@ -186,10 +161,10 @@ button:hover{
 
 <div class="container">    
   <div class="row">
-    <h2 >Exercise</h2>
+    <h1 style="font-size:40px;">Exercise</h1>
     <div class="eg">
-    	 <p>Match the two parts of these sentences.</p>
-
+    	 <p>Match the sentences with the correct answer.</p>
+         <p>Select the sentences by clicking on them.</p>
 	 <div id="exercise-container" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
  unselectable="on"
  onselectstart="return false;" 
@@ -204,37 +179,13 @@ button:hover{
                 @clicked='clickedEvent'
                 id='column-two'
             ></column>
-	 </div>
-    </div>
-    <div align="center">
+     </div>
+     <div align="center">
       <button onclick="Score()" class="button2" >Check</button>
-      </div>
+    </div>
+    </div>
   </div>
 </div><br>
-
-<div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
-          <div class="btn-cerrar">
-            <button data-pushbar-close><i class="fas fa-times"> </i></button>
-          </div>
-          <nav>
-            <ul id="menudesplasable">
-             <li><a href="/">Temas</a></li> 
-             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
-              <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Lecturas</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Estructuras</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Juegos</a></li>
-              <li><a href="#">Secciones extras</a></li>
-            </ul>
-          </li>
-          </ul>
-        </nav>
-      </div>
 
 <script>
   
@@ -388,15 +339,17 @@ function Score(){
     if(mistakes>0){
         answertext = "\nTienes " + mistakes + " errores";
         alert(answertext);
+        window.location.reload();
     }else{
         if(user_answer.length<5){
             alert("Relaciona todos los elementos!");
         }else{
             console.log(user_answer);
             alert("Todas tus respuestas son correctas!");
+            window.location.reload();
         }
     }
-    window.location.reload();
+    
 }
 </script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>

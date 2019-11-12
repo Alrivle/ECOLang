@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{asset('css/pushbar.css')}}">
-  <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
@@ -47,7 +46,7 @@
 
 .numeracion{
   font-size:23px;
-  background:rgb(195, 195, 196);
+  background:rgb(190, 190, 190);
   width:90%;
   margin:auto;
   margin-bottom:40px;
