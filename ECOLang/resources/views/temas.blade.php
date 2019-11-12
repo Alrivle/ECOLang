@@ -60,9 +60,8 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                  <li><a href="videos">Do you know get?</a></li>
-	                <li><a href=#>Applications of get</a></li>
-	                <li><a href=#>Vocabulary</a></li>
+                  <li><a href="videos">Regular Verbs</a></li>
+	                <li><a href=#>Irregular Verbs</a></li>
                 </div>
             </div>
         </div>

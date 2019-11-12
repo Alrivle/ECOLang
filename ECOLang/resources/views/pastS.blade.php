@@ -72,6 +72,7 @@ nav{
 .button2 {
   font-size: 25px;
   color: white;
+  margin-left:50px;
   border: 2px solid rgb(51, 122, 183);
   background-color: rgb(51, 122, 183);
   border-radius: 50px;
@@ -308,6 +309,7 @@ body{
         <p><input type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/> drinks </p>
         <p><input type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/> drank </p>
         <p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
+        <br>
         <br>
         <br>
         <button onclick="Score()" class="button2">Check</button>
