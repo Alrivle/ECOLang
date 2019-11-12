@@ -40,7 +40,9 @@ Route::get('/lecturaPS', function () {
 Route::get('/regularV', function () {
     return view('regularV');
 });
-
+Route::get('/vocabulary', function () {
+    return view('vocabulary');
+});
 Route::get('/juegos', function () {
     return view('juegos');
 });

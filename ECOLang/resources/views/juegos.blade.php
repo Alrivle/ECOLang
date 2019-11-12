@@ -29,7 +29,7 @@
 <div class="card1">
   <img src="{{asset('img/languages.png')}}" alt="Dictionary">
   <div class="subtitle">
-  <h2><a href="">Vocabulary</a></h2>
+  <h2><a href="vocabulary">Vocabulary</a></h2>
   </div>
 </div>
 
