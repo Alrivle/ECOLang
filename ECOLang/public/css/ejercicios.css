@@ -72,7 +72,7 @@ nav{
 }
 
 .container .card .face{
-  width: 300px;
+  width: 310px;
   height: 200px;
   transition: 0.5s;
 }
@@ -181,5 +181,5 @@ footer {
 }
 
 footer{
-  background:rgb(222, 222, 223);
+  background:rgb(202, 202, 202)
 }

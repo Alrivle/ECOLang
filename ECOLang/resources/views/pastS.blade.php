@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Past Simple</title>
+  <title>Simple Past</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -44,120 +44,27 @@ nav{
   height: 4vh;
 }
 
-.logout:hover{
-  height: 4vh;
-}
 
 .logo{
   position: absolute;
   left: 20px;
   top: 0px;
   height:12.5vh;  
-}
-
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .dropdown-submenu {
-    position: relative;
-}    
-
-
+}   
 .eg{
    font-size:25px;	
 }
 
 .eg2{
-  background:rgb(212, 212, 213);
   width:80%;
   font-size:33px;	
 }
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-}
-
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
-#exercise-container{
-    display: flex;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    background-color: #E2ECFF;
-    
-}
-
-.column{
-    display: flex;
-    flex-direction: column;
-}
-
-#column-one{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#column-two{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.column-element{
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
 .ejercicios-container{
   margin:auto;
   margin-top:10px;
   margin-bottom:50px;
   background-color:rgb(212, 212, 213);
-  width:75%;
+  width:70%;
 }
 
 .button2 {
@@ -243,7 +150,7 @@ body{
   </style>
 
 </head>
-<body  marginheight="15" class="eg">
+<body class="eg">
 
 <script>
     var res = new Array;
@@ -355,7 +262,7 @@ body{
       <div class="eg" align="center">
 	<h1  style="color:#F8436E">Be careful!!</h1>
 	<p >When we use the negative, we
-  don’t change the main verb. We use ‘didn’t’ instead.</p>
+  don’t change the main verb. We use "didn’t" instead.</p>
     	<ul>
 	  <li>I <b>didn't do</b> my homework</li>
 	  <li>She <b>didn't ran</b> 5 kilometers yesterday</li>
@@ -368,7 +275,7 @@ body{
   </div>
 </div>
 <div class="ejercicios-container">  
-  <h1 class="title" align="center">Ejercicios</h1>
+  <h1 class="title" align="center" style="margin-bottom:-15px;">Exercise</h1>
   <p style="font-size:30px;" align="center">Select the correct option</p>
   <div class="row">
     <div class="col-md-5 col-md-offset-2">
@@ -382,10 +289,11 @@ body{
         <p><input type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> ate </p>
         <p><input type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> eat </p>
 
-        <li value="3" id="3">You ___ milk the last saturday.</li>
-        <p><input type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/> drinks </p>
-        <p><input type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/> drank </p>
-        <p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
+        <li value="5" id="5">We ___ in the pool the last vacation.</li>
+        <p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> swam </p>
+        <p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> swimming </p>
+        <p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> swim</p>
+        
     </div>
     <div class="col-md-offset-2">
           <li value="4" id="4">He ___ in the last party.</li>
@@ -393,13 +301,13 @@ body{
           <p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> sung </p>
           <p><input type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> jump</p>
 
-         <li value="5" id="5">We ___ in the pool the last vacation.</li>
-        <p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> swam </p>
-        <p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> swimming </p>
-        <p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> swim</p>
+          <li value="3" id="3">You ___ milk the last saturday.</li>
+        <p><input type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/> drinks </p>
+        <p><input type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/> drank </p>
+        <p><input type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
         <br>
         <br>
-        <button onclick="Score()" class="button2">Revisar</button>
+        <button onclick="Score()" class="button2">Check</button>
     </div>
   </div>
 </div>
