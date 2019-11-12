@@ -37,7 +37,13 @@ Route::get('/exercisePS', function () {
 Route::get('/lecturaPS', function () {
     return view('lecturaPS');
 });
+Route::get('/regularV', function () {
+    return view('regularV');
+});
 
+Route::get('/juegos', function () {
+    return view('juegos');
+});
 
 Route::get('/login', function () {
     return view('login');
