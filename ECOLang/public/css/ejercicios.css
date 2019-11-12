@@ -15,6 +15,10 @@ body{
   src: url("../font/Report.otf");
 }
 
+.logout:hover{
+  height: 4.3vh;
+}
+
 nav{
   height: 10vh;
   border-bottom: 3px solid rgb(189, 185, 190);
@@ -45,9 +49,6 @@ nav{
   height: 4vh;
 }
 
-.logout:hover{
-  height: 4vh;
-}
 
 .logo{
   position: absolute;

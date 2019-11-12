@@ -59,6 +59,11 @@ function onDrop(event) {
   margin-left: auto;
 }
 
+.eg{
+   font-size:27px;
+   text-align:center;
+}
+
 .nav-links li a{
   color: black;
   font-size: 25px;
@@ -74,7 +79,7 @@ function onDrop(event) {
 }
 
 .logout:hover{
-  height: 4vh;
+  height: 4.3vh;
 }
 
 .logo{
@@ -83,15 +88,13 @@ function onDrop(event) {
   top: 0px;
   height:12.5vh;  
 }
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .dropdown-submenu {
-    position: relative;
+
+.title{
+  text-align: center;
+  font-size: 35px;
+  height: 80px;
 }
+
 #draggableSpan{
   margin-left: 10vw;
   border-style: solid;
@@ -107,50 +110,6 @@ function onDrop(event) {
   border-style: solid;
   border-radius: 10px;
 }
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-}
-
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
-
 body{
   min-height: 100vh;
   align-items: center;
@@ -176,23 +135,26 @@ body{
 
 <div class="container">    
   <div class="row" align="center">
-    <h2 style="text-align: center;">Video de:</h2></br>
+    <h1 style="text-align: center; font-size:65px;">Do you know get?</h1></br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/sN2BZg7XLNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 
-<div class="container">
+<div class="container" style="background-color:rgb(212, 212, 213); margin-top:50px; margin-bottom:50px; width:80%;">
   <div class="row">
-    <h2 style="text-align: center;">Preguntas</h2>
-    <h4 style="text-align: left;"> Instrucciones: </h4>
-    Desliza las respuestas de la caja de respuestas a la pregunta correspondiente 
-    <h2 style="text-align: right; margin-top: -5vh; margin-right: 8vw">Respuestas:</h2>
+  <div class="eg">
+    <p>Drag and drop the answer to it's question</p>
+  </div>
+    <h1 style="text-align:left; margin-left: 10vw; font-size:25;">Questions</h1>
+    <h1 style="text-align: right; margin-top: -7vh; margin-right: 13vw">Answers</h1>
     <div class="col-sm-8">
-        1.Que es get? <br><br>
-        2.Porque se usa get? <br><br>
+      <ol style="text-align:left; margin-left: 10vw; margin-bottom:5 0px; font-size:23px;">
+        <li>What is get?</li>
+        <li>Why do we use get?</li>
+      </ol>
     </div>
     <div class="col-sm-4">
-       <div class="col-sm-2" style="border-right: 2px solid black; width: 50%;">
+       <div class="col-sm-2" style="width: 50%;">
           <div class="parent">
             <span draggable='true' ondragstart='onDragStart(event);'
               ondragover='onDragOver(event);'
@@ -208,7 +170,7 @@ body{
             <br><br> 
         </div>
       </div>
-        <div class="col-sm-2" style="width: 50%;">  
+        <div class="col-sm-2" style="width: 50%; font-size:23px;">  
           <div class="parent">
             <span draggable='true' ondragstart='onDragStart(event);'
               ondragover='onDragOver(event);'
@@ -226,14 +188,5 @@ body{
     </div>      
   </div>
 </div>
-
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src="{{asset('js/pushbar.js')}}"></script>
-  <script>
-    var pushbar = new Pushbar({
-      blur: false,
-      overlay: false
-    });
-  </script>
 </body>
 </html>

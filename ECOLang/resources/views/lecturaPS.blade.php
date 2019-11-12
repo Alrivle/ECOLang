@@ -22,6 +22,9 @@ nav{
   src: url("../font/Report.otf");
 }
 
+.logout:hover{
+  height: 4.3vh;
+}
 .nav-links{
   display: flex;
   list-style: none;
@@ -46,9 +49,6 @@ nav{
   height: 4vh;
 }
 
-.logout:hover{
-  height: 4vh;
-}
 
 .logo{
   position: absolute;
@@ -96,13 +96,6 @@ body{
 }
 .eg{
    font-size:23px;	
-}
-
-.title{
-  text-align: center;
-  font-size: 35px;
-  height: 80px;
-
 }
 
 @font-face{

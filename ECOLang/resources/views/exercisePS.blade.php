@@ -52,7 +52,9 @@
   margin-bottom:40px;
 }
 
-
+.logout:hover{
+  height: 4.3vh;
+}
 
 .logo{
   position: absolute;

@@ -43,6 +43,9 @@ nav{
   height: 4vh;
 }
 
+.logout:hover{
+  height: 4.3vh;
+}
 
 .logo{
   position: absolute;
