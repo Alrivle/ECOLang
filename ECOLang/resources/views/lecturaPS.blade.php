@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="{{asset('css/pushbar.css')}}">
+  <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  
@@ -258,6 +260,30 @@ imagen{
   </div>
 </div><br>
 
+<div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+          <div class="btn-cerrar">
+            <button data-pushbar-close><i class="fas fa-times"> </i></button>
+          </div>
+          <nav>
+            <ul id="menudesplasable">
+             <li><a href="/">Temas</a></li> 
+             <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
+              <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Lecturas</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Estructuras</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Juegos</a></li>
+              <li><a href="#">Secciones extras</a></li>
+            </ul>
+          </li>
+          </ul>
+        </nav>
+      </div>
+
 <script>
   
 Vue.component('column-element',{
@@ -421,6 +447,13 @@ function Score(){
     window.location.reload();
 }
 </script>
-
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="{{asset('js/pushbar.js')}}"></script>
+  <script>
+    var pushbar = new Pushbar({
+      blur: false,
+      overlay: false
+    });
+  </script>
 </body>
 </html>
