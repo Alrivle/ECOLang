@@ -31,7 +31,7 @@
             <div class="face face2">
                 <div class="content">
                   <li><a href="videos">Do you know get?</a></li>
-	                <li><a href=#>Applications of get</a></li>
+	                <li><a href=lecturaGet>Reading</a></li>
                 </div>
             </div>
         </div>

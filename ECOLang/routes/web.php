@@ -60,6 +60,8 @@ Route::get('/temas2', function () {
 Route::get('/index', function () {
     return view('index');
 });
-
+Route::get('/lecturaGet', function () {
+    return view('lecturaGet');
+});
 Route::post('logINDB','Auth\LoginController@login')->name('logInDB');
 Route::post('register','Auth\RegisterController@create')->name('register');
