@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{asset('css/pushbar.css')}}">
+    <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
 </head>
 <body class="eg">
 
@@ -58,6 +60,7 @@
 } 
   </script>
 </head>
+
 <body marginheight="15" style="font-size: 14px">
 <nav class="navbar navbar" id="barra">
       <div class="container-fluid">
@@ -132,11 +135,10 @@
   <div class="row">
     <div class="balloon">
       <div class="eg" align="center">
-	<h1  style="color:#F8436E">Be careful!!</h2>
+	<h1  style="color:#F8436E">Be careful!!</h1>
 	<p >When we use the negative, we 
   don’t change the main verb. We use ‘didn’t’ instead.</p>
     	<ul class="conversacion">
-
 	  <li>I <b>didn't do</b> my homework</li>
 	  <li>She <b>didn't ran</b> 5 kilometers yesterday</li>
 	  <li>We <b>didn't eat</b> pozole</li>
@@ -147,12 +149,11 @@
 
   </div>
 </div>
-
 <div class="ejercicios-container">  
   <h1 class="title" align="center" style="margin-bottom:-15px;">Exercise</h1>
   <p style="font-size:30px;" align="center">Select the correct option</p>
   <div class="row">
-    <div class="col-md-5 col-md-offset-2">
+    <div class="col-md-5 col-md-offset-2" style="font-size: 20px">
         <li value="1" id="1">She ___ the piano yesterday.</li>
         <p><input type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> plays </p>
         <p><input type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> play </p>
@@ -167,8 +168,9 @@
         <p><input type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> swam </p>
         <p><input type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> swimming </p>
         <p><input type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> swim</p>
+        
     </div>
-    <div class="col-md-offset-2">
+    <div class="col-md-offset-2" style="font-size: 20px">
           <li value="4" id="4">He ___ in the last party.</li>
           <p><input type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> didn't sing </p>
           <p><input type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> sung </p>
