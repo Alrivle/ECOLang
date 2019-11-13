@@ -16,10 +16,10 @@
   font-size: 25px;
 }
 .banner.error {
-  background-color: #f00;
+  background-color: #F8436E;
 }
 .banner.success {
-  background-color: #0a0;
+  background-color: #228B22;
 }
 .hangman {
   margin: 50px;
@@ -86,10 +86,10 @@
   font-size: 4rem;
   text-transform: uppercase;
   margin-right: 20px;
-  color: #f00;
+  color: #F8436E;
 }
 .guesses .guessed-letter.valid-letter {
-  color: #0a0;
+  color: #228B22;
 }
 .new-game {
   padding: 20px;
@@ -107,7 +107,7 @@
     opacity: 0.9;
 }
 .fail {
-  color: #f00;
+  color: #F8436E;
 }
 .wins,
 .losses {
