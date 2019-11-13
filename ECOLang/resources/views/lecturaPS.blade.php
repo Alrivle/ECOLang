@@ -180,6 +180,33 @@ button:hover{
   </div>
 </div><br>
 
+<<<<<<< HEAD
+=======
+<div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+          <div class="btn-cerrar">
+            <button data-pushbar-close><i class="fas fa-times"> </i></button>
+          </div>
+          <nav>
+            <ul id="menudesplasable">
+             <li><a href="temas">Temas</a></li> 
+             <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
+              <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="lecturaPS">Lecturas</a></li>
+                    <li><a href="videos">Videos</a></li>
+                    <li><a href="pastS">Estructuras</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Juegos</a></li>
+              <li><a href="#">Secciones extras</a></li>
+            </ul>
+          </li>
+          </ul>
+        </nav>
+</div>
+
+>>>>>>> CarlosV2
 <script>
   
 Vue.component('column-element',{

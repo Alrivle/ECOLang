@@ -54,7 +54,9 @@ Route::get('/login', function () {
 Route::get('/temas', function () {
     return view('temas');
 });
-
+Route::get('/temas2', function () {
+    return view('temas2');
+});
 Route::get('/index', function () {
     return view('index');
 });

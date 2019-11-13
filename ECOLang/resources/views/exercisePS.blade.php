@@ -179,6 +179,7 @@ button:hover{
 </head>
 <body>
 
+<<<<<<< HEAD
 <nav>
     <ul class="nav-links">
         <a href="temas"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo"></a>
@@ -187,6 +188,32 @@ button:hover{
         <li><a href="index"><img class="logout" src="{{asset('img/logout.png')}}" alt="Logo"></a></li>
     </ul>
 </nav>
+=======
+<<<<<<< HEAD
+<nav class="navbar navbar" id="barra">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="temas">
+            <img src="{{asset('img/logo.png')}}" alt="logo" id="navlogo"/>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
+            <li><a href="index"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+>>>>>>> CarlosV2
 
 <div class="container">    
      <div class="row" align="center">
@@ -329,14 +356,14 @@ button:hover{
           </div>
           <nav>
             <ul id="menudesplasable">
-             <li><a href="/">Temas</a></li> 
+             <li><a href="temas">Temas</a></li> 
              <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
               <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Lecturas</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Estructuras</a></li>
+                    <li><a href="lecturaPS">Lecturas</a></li>
+                    <li><a href="videos">Videos</a></li>
+                    <li><a href="pastS">Estructuras</a></li>
                   </ul>
               </li>
               <li><a href="#">Juegos</a></li>
