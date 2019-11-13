@@ -30,12 +30,12 @@
             <li><button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
-            <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+            <li><a href="index"><span class="glyphicon glyphicon-log-out" id="cerrars"></span> Log Out</a></li>
           </ul>
         </div>
       </div>
     </nav>
+<div class="background">
 <div class="container">    
      <div class="row" align="center">
      	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
@@ -58,7 +58,7 @@
 	   </p>
 	 </div>
 	 <div align="left">
-	   <img src="captura.png">
+	   <img src="{{asset('img/pizza.jpeg')}}">
 	 </div>
     </div>
   </div>
@@ -88,6 +88,7 @@
       </div>
   </div>
 </div><br>
+</div>
 
 <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
           <div class="btn-cerrar">

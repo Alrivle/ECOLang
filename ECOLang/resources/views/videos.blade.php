@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="index">
+          <a class="navbar-brand" href="temas">
             <img src="{{asset('img/logo.png')}}" alt="logo" id="navlogo"/>
           </a>
         </div>
@@ -30,13 +30,12 @@
             <li><button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
-            <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+            <li><a href="index"><span class="glyphicon glyphicon-log-out" id="cerrars"></span> Log Out</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
+<div class="background">
 <div class="container">    
   <div class="row" align="center">
     <h2 style="text-align: center;">Video de:</h2></br>
@@ -48,11 +47,11 @@
   <div class="row">
     <h2 style="text-align: center;">Preguntas</h2>
     <h4 style="text-align: left;"> Instrucciones: </h4>
-    Desliza las respuestas de la caja de respuestas a la pregunta correspondiente 
-    <h2 style="text-align: right; margin-top: -5vh; margin-right: 8vw">Respuestas:</h2>
+    <p style="font-size: 20px">Desliza las respuestas a la pregunta correspondiente 
+    <p style="text-align: right; margin-top: -5vh; margin-right: 8vw; font-size: 20px;">Respuestas:</p></p>
     <div class="col-sm-8">
-        1.Que es get? <br><br>
-        2.Porque se usa get? <br><br>
+        <p style="font-size: 20px">1.¿Qué significa get down?</p>
+        <p style="font-size: 20px">2.¿En qué tiempo esta got??</p>
     </div>
     <div class="col-sm-4">
        <div class="col-sm-2" style="border-right: 2px solid black; width: 50%;">
@@ -75,12 +74,12 @@
           <div class="parent">
             <span draggable='true' ondragstart='onDragStart(event);'
               ondragover='onDragOver(event);'
-              ondrop='onDrop(event);' class="respuestas" id="cajaresp1"> Respuesta1
+              ondrop='onDrop(event);' class="respuestas" id="cajaresp1"> Bajar
             </span>
             <br><br> 
           </div>
           <div class="parent">
-            <span draggable='true' ondragstart='onDragStart(event);' ondragover='onDragOver(event);' ondrop='onDrop(event);' class="respuestas" id="cajaresp2"> Respuesta2
+            <span draggable='true' ondragstart='onDragStart(event);' ondragover='onDragOver(event);' ondrop='onDrop(event);' class="respuestas" id="cajaresp2"> Pasado
             </span>
             <br><br> 
           </div>
@@ -88,6 +87,7 @@
     </div>    
     </div>      
   </div>
+</div>
 </div>
 
 <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">

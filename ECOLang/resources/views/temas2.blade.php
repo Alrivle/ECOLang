@@ -32,7 +32,7 @@
         </div>
       </div>
     </nav>
-
+      <div class="background">
     	<div class="container" id="indexcontenedor"> 
     		<div class="row">
     			<div class="col-sm-12">  
@@ -53,7 +53,7 @@
     		    </div>
     	    </div> 
     	  </div>	
-
+      </div>
 
         <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
           <div class="btn-cerrar">
