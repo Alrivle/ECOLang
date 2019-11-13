@@ -166,7 +166,7 @@ class Game {
   showLoss() {
     this.banner.innerText = "Game Over 😢";
     this.banner.style.opacity = 1;
-    this.banner.style.backgroundColor = '#f00';
+    this.banner.style.backgroundColor = '#F8436E';
     this.controls.style.opacity = 0;
     this.newGameBtn.style.display = "block";
 
@@ -196,13 +196,13 @@ class Game {
   showError(error) {
     this.banner.innerText = error;
     this.banner.style.opacity = 1;
-    this.banner.style.backgroundColor = '#f00';
+    this.banner.style.backgroundColor = '#F8436E';
     setTimeout(this.hideBanner, 3000);
     this.banner.classList.remove('error');
   }
 
   showWin() {
-    document.querySelector(".banner").style.backgroundColor = '#0a0';
+    document.querySelector(".banner").style.backgroundColor = '#228B22';
     this.banner.innerText = "Congrats! You won. 🏆";
     this.banner.style.opacity = 1;
     this.controls.style.opacity = 0;
