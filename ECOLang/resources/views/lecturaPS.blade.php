@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="index">
+          <a class="navbar-brand" href="temas">
             <img src="{{asset('img/logo.png')}}" alt="logo" id="navlogo"/>
           </a>
         </div>

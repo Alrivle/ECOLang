@@ -60,7 +60,7 @@
   </script>
 </head>
 
-<body marginheight="15">
+<body marginheight="15" style="font-size: 14px">
 <nav class="navbar navbar" id="barra">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -69,7 +69,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="index">
+          <a class="navbar-brand" href="temas">
             <img src="{{asset('img/logo.png')}}" alt="logo" id="navlogo"/>
           </a>
         </div>
@@ -82,7 +82,7 @@
           </ul>
         </div>
       </div>
-  </nav>
+    </nav>
 <div class="background">  
 <div class="container">    
      <div class="row" align="center">
