@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>                        
           </button>
           <a class="navbar-brand" href="index">
-            <img src="{{asset('img/logo.jpeg')}}" alt="logo" id="navlogo"/>
+            <img src="{{asset('img/logo.png')}}" alt="logo" id="navlogo"/>
           </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -96,14 +96,14 @@
           </div>
           <nav>
             <ul id="menudesplasable">
-             <li><a href="/">Temas</a></li> 
+             <li><a href="temas">Temas</a></li> 
              <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
               <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Lecturas</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Estructuras</a></li>
+                    <li><a href="lecturaPS">Lecturas</a></li>
+                    <li><a href="videos">Videos</a></li>
+                    <li><a href="pastS">Estructuras</a></li>
                   </ul>
               </li>
               <li><a href="#">Juegos</a></li>

@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>                        
           </button>
           <a class="navbar-brand" href="index">
-            <img src="{{asset('img/logo.jpeg')}}" alt="logo" id="navlogo"/>
+            <img src="{{asset('img/logo.png')}}" alt="logo" id="navlogo"/>
           </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -36,7 +36,6 @@
         </div>
       </div>
     </nav>
-
 <div class="container">    
      <div class="row" align="center">
      	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
@@ -50,12 +49,17 @@
     <h2>Reading</h2>
     <div class="lectura">
     	 <h3 align="center">The Pizza</h3>
-    	 <p class="lectura"  >
-    	 "	Daddy, let's order a pizza," Billy said. "That sounds like a good idea," said his dad.
-    	 	 They looked at a menu they had at home. "What kind do you want?" his dad asked. Billy wanted a large pizza. He wanted a pizza with four toppings. He wanted cheese, pepperoni, ham, and pineapple. His dad said that sounded good.
-    		 He called the pizza place. "They don't have any pineapple," dad told Billy. "What do you want instead?" Billy wanted sausage instead. His dad ordered sausage instead of pineapple. About 	    	30 minutes later, there was a knock on the door. It was the pizza man. "Here's your pizza," he told Billy's dad. "That'll be $16." Dad paid the pizza man. He also gave him a tip. Dad took the pizza to the living room. 
-    		 A baseball game was on TV. Billy and his dad started to eat the pizza in the living room. "I hope the Yankees lose," Billy told his dad. "I hope the Yankees lose, too," his dad said. 
-	 </p>
+    	 <div class="lectura">
+	   <p   >
+    	     "	Daddy, let's order a pizza," Billy said. "That sounds like a good idea," said his dad.
+    	     They looked at a menu they had at home. "What kind do you want?" his dad asked. Billy wanted a large pizza. He wanted a pizza with four toppings. He wanted cheese, pepperoni, ham, and pineapple. His dad said that sounded good.
+    	     He called the pizza place. "They don't have any pineapple," dad told Billy. "What do you want instead?" Billy wanted sausage instead. His dad ordered sausage instead of pineapple. About 	    	30 minutes later, there was a knock on the door. It was the pizza man. "Here's your pizza," he told Billy's dad. "That'll be $16." Dad paid the pizza man. He also gave him a tip. Dad took the pizza to the living room. 
+    	     A baseball game was on TV. Billy and his dad started to eat the pizza in the living room. "I hope the Yankees lose," Billy told his dad. "I hope the Yankees lose, too," his dad said. 
+	   </p>
+	 </div>
+	 <div align="left">
+	   <img src="captura.png">
+	 </div>
     </div>
   </div>
 </div><br>
@@ -91,14 +95,14 @@
           </div>
           <nav>
             <ul id="menudesplasable">
-             <li><a href="/">Temas</a></li> 
+             <li><a href="temas">Temas</a></li> 
              <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
               <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Lecturas</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Estructuras</a></li>
+                    <li><a href="lecturaPS">Lecturas</a></li>
+                    <li><a href="videos">Videos</a></li>
+                    <li><a href="pastS">Estructuras</a></li>
                   </ul>
               </li>
               <li><a href="#">Juegos</a></li>
@@ -107,7 +111,7 @@
           </li>
           </ul>
         </nav>
-      </div>
+</div>
 
 <script>
   
@@ -166,6 +170,7 @@ function clickedEvent(e){
             if(key < 7){ //se verifica que no se haya seleccionado un elemento de la columna incorrecta
                 e[0].style = "background-color: #B0CEF5"
                 this.clicked += 1; //pasamos al siguiente elemento
+                user_answer = []
                 first = key;
             }
         break;
@@ -261,7 +266,12 @@ function Score(){
         answertext = "\nTienes " + mistakes + " errores";
         alert(answertext);
     }else{
-        alert("Todas tus respuestas son correctas!");
+        if(user_answer.length<5){
+            alert("Relaciona todos los elementos!");
+        }else{
+            console.log(user_answer);
+            alert("Todas tus respuestas son correctas!");
+        }
     }
     window.location.reload();
 }

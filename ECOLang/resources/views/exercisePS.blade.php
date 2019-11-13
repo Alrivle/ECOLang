@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 <script>
     var res = new Array;
     var no = new Array;
@@ -48,17 +47,22 @@
         var answertext="Resultado\n";
         calif = 0;
         for(i=1; i<=10; i++){
-      answertext = answertext + "\nPregunta "+ i + ": ";
-      if(res[i] != tures[i]){
-                  answertext = answertext + explicares[i]+ "\n";
-      }else{
-          answertext = answertext + "bien\n";
-          calif++;
-      }
+	    var cadena ='';	   
+	    var pregunta = document.getElementById(cadena+i);
+		    
+            //answertext = answertext + "\nPregunta "+ i + ": ";
+            if(res[i] != tures[i]){
+		answertext = answertext + explicares[i]+ "\n";
+		pregunta.style.color = "#F8436E";	
+		}else{
+		pregunta.style.color = "#228B22";	
+                 //answertext = answertext + "bien\n";
+                 calif++;
+            }
   }
-           answertext = answertext + "\nCalificación: " + calif;
-           alert(answertext);
-           window.location.reload();
+           //answertext = answertext + "\nCalificación: " + calif;
+           //alert(answertext);
+           //window.location.reload();
     }
 
     function salir() {
@@ -73,6 +77,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <nav class="navbar navbar" id="barra">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -81,8 +86,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="index">
-            <img src="{{asset('img/logo.jpeg')}}" alt="logo" id="navlogo"/>
+          <a class="navbar-brand" href="temas">
+            <img src="{{asset('img/logo.png')}}" alt="logo" id="navlogo"/>
           </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -91,18 +96,15 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
-            <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+            <li><a href="index"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-<div class="container">    
-     <div class="row" align="center">
-     	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
-
-     </div>
-</div><br>
+<div class="title">
+    <h1>Ejercicios</h1>
+</div>
 
   <div class="container">    
   <div class="row">
@@ -132,32 +134,32 @@
 
 
     <div class="eg">
-      <ul>
-  <li>She ___ to the Olympics.</li>
-  <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> went</p>
+      <ol>
+  <li id="1">She ___ to the Olympics.</li>
+ <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> went</p>
   <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> want </p>
   <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> go </p>
 
-  <li>I ___ a fast car.</li>
+  <li id="2">I ___ a fast car.</li>
   <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> buy </p>
   <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> drove </p>
   <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> clean </p>
 
-  <li>They ___ milk the last saturday.</li>
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> drink </p>
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> drank </p>
+  <li id="3">They ___ milk the last saturday.</li>
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/> drink </p>
+  <p><input style="cursor: pointer;" type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/> drank </p>
   <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
 
-  <li>They ___ in the last party.</li>
+  <li id="4">They ___ in the last party.</li>
   <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> danced </p>
   <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> eat</p>
   <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> jump</p>
 
-  <li>We ___ for an hour.</li>
+  <li id="5">We ___ for an hour.</li>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> waited </p>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> run </p>
   <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> go</p>
-      </ul>
+      </ol>
       <br>
 
 <div class="numeracion">
@@ -173,8 +175,8 @@
         <div class="eg" align="left">
 
 <div id="outer">
-    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> eat </button></div>
-    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> dance </button></div>
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> drink </button></div>
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> drunk </button></div>
     <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="border-color:Green;"/> drank </button></div>
 </div>
 
@@ -187,32 +189,33 @@
     </ul>
 </div>
 
-<ul>
-  6.
-  <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> begin</p>
-  <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> began </p>
-  <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> begun </p>
-
-  7.
-  <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> broke </p>
-  <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> break </p>
-  <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> broken </p>
-
-  8.
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> choose </p>
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> chose </p>
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> chosen </p>
-
-  9.
-  <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> eaten </p>
-  <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> eat</p>
-  <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> ate</p>
-
-  10.
-  <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> fly </p>
-  <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> flew </p>
-  <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> flown</p>
-      </ul>
+<ol>
+  <li id="6">
+    <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(6,this.value)"/> begin</p>
+    <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(6,this.value)"/> began </p>
+    <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(6,this.value)"/> begun </p>
+  </li>
+  <li id="7">
+    <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(7,this.value)"/> broke </p>
+    <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(7,this.value)"/> break </p>
+    <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(7,this.value)"/> broken </p>
+  </li>
+  <li id="8">
+    <p><input style="cursor: pointer;" type="radio" name="R3" value="a" onclick="Engine(8,this.value)"/> choose </p>
+    <p><input style="cursor: pointer;" type="radio" name="R3" value="b" onclick="Engine(8,this.value)"/> chose </p>
+    <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(8,this.value)"/> chosen </p>
+  </li>
+  <li id="9">
+    <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(9,this.value)"/> eaten </p>
+    <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(9,this.value)"/> eat</p>
+    <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(9,this.value)"/> ate</p>
+  </li>
+  <li id="10">
+    <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(10,this.value)"/> fly </p>
+    <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(10,this.value)"/> flew </p>
+    <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(10,this.value)"/> flown</p>
+  </li>
+</ol>
       <br>
 
 
@@ -231,14 +234,14 @@
           </div>
           <nav>
             <ul id="menudesplasable">
-             <li><a href="/">Temas</a></li> 
+             <li><a href="temas">Temas</a></li> 
              <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ejecicios
               <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Lecturas</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Estructuras</a></li>
+                    <li><a href="lecturaPS">Lecturas</a></li>
+                    <li><a href="videos">Videos</a></li>
+                    <li><a href="pastS">Estructuras</a></li>
                   </ul>
               </li>
               <li><a href="#">Juegos</a></li>
