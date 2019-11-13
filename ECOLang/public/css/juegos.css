@@ -17,7 +17,7 @@ body {
   width: 250px;
   height: 250px;
   margin-top: 50px;
-  background: linear-gradient(rgb(93,94,170),rgb(93,66,103));
+  background: linear-gradient(rgb(93,94,170),#5d4267);
   transition:.6s;
   padding: 20px;
 }
