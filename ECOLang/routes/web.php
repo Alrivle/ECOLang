@@ -18,6 +18,10 @@ Route::get('/exercisePS', function () {
     return view('exercisePS');
 });
 
+Route::get('/signIn', function () {
+    return view('signIn');
+});
+
 Route::get('/', function () {
     return view('index');
 });
@@ -33,7 +37,15 @@ Route::get('/exercisePS', function () {
 Route::get('/lecturaPS', function () {
     return view('lecturaPS');
 });
-
+Route::get('/regularV', function () {
+    return view('regularV');
+});
+Route::get('/vocabulary', function () {
+    return view('vocabulary');
+});
+Route::get('/juegos', function () {
+    return view('juegos');
+});
 
 Route::get('/login', function () {
     return view('login');

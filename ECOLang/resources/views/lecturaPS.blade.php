@@ -36,9 +36,10 @@
       </div>
     </nav>
 <div class="background">
+
 <div class="container">    
      <div class="row" align="center">
-     	  <h1 style="text-align: center;">Past Simple Excercises</h1></br>
+     	  <h1 style="text-align: center; font-size:65px;">Reading</h1></br>
 	  <div class="numeracion">
 	  </div>
      </div>
@@ -46,9 +47,8 @@
 
 <div class="container">    
   <div class="row">
-    <h2>Reading</h2>
     <div class="lectura">
-    	 <h3 align="center">The Pizza</h3>
+    	 <h1 style="margin-top:-30px; font-size:43px;" align="center">The Pizza</h3>
     	 <div class="lectura">
 	   <p   >
     	     "	Daddy, let's order a pizza," Billy said. "That sounds like a good idea," said his dad.
@@ -57,8 +57,8 @@
     	     A baseball game was on TV. Billy and his dad started to eat the pizza in the living room. "I hope the Yankees lose," Billy told his dad. "I hope the Yankees lose, too," his dad said. 
 	   </p>
 	 </div>
-	 <div align="left">
-	   <img src="{{asset('img/pizza.jpeg')}}">
+	 <div align="center">
+	   <img class="imagen-lectura" src="{{asset('img/pizza.jpeg')}}">
 	 </div>
     </div>
   </div>
@@ -66,11 +66,14 @@
 
 <div class="container">    
   <div class="row">
-    <h2 >Exercise</h2>
+    <h1 style="font-size:40px;">Exercise</h1>
     <div class="eg">
-    	 <p>Match the two parts of these sentences.</p>
-
-	 <div id="exercise-container">
+    	 <p>Match the sentences with the correct answer.</p>
+         <p>Select the sentences by clicking on them.</p>
+	 <div id="exercise-container" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+ unselectable="on"
+ onselectstart="return false;" 
+ onmousedown="return false;">
 	   <column
                 v-bind:things='questions'
                 @clicked='clickedEvent'
@@ -81,11 +84,11 @@
                 @clicked='clickedEvent'
                 id='column-two'
             ></column>
-	 </div>
-    </div>
-    <div align="center">
+     </div>
+     <div align="center">
       <button onclick="Score()" class="button2" >Check</button>
-      </div>
+    </div>
+    </div>
   </div>
 </div><br>
 </div>
@@ -113,7 +116,6 @@
           </ul>
         </nav>
 </div>
-
 <script>
   
 Vue.component('column-element',{
@@ -266,15 +268,17 @@ function Score(){
     if(mistakes>0){
         answertext = "\nTienes " + mistakes + " errores";
         alert(answertext);
+        window.location.reload();
     }else{
         if(user_answer.length<5){
             alert("Relaciona todos los elementos!");
         }else{
             console.log(user_answer);
             alert("Todas tus respuestas son correctas!");
+            window.location.reload();
         }
     }
-    window.location.reload();
+    
 }
 </script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>

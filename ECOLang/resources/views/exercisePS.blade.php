@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Past Simple Excercises</title>
+  <title>Simple Past Excercises</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{asset('css/pushbar.css')}}">
-  <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 <script>
     var res = new Array;
     var no = new Array;
@@ -77,6 +77,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <nav class="navbar navbar" id="barra">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -101,20 +102,20 @@
     </nav>
 <div class="background">
 <div class="title">
-    <h1>Ejercicios</h1>
+    <h1>Exercises</h1>
 </div>
 
-  <div class="container">    
+
+  <div class="container" style="background-color:rgb(212, 212, 213); margin-bottom:50px;">    
   <div class="row">
-    <h2 >Exercises</h2>
     <div class="numeracion">
     <ul>
-      <h3>Exercise 1</h3>
+      <h2>Exercise 1</h2>
       <div class="container">
         <div class="eg" align="left">
           <p>Select the right answer (Simple Past).</p>
 
-<ul>
+      <ul>
       <h4>Example</h4>
       <div class="container">
         <div class="eg" align="left">
@@ -129,36 +130,41 @@
     </ul>
     </div>
 
-
-
-    <div class="eg">
+  <div class="eg">
+    <div class="row">
       <ol>
-  <li id="1">She ___ to the Olympics.</li>
- <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> went</p>
-  <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> want </p>
-  <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> go </p>
+        <div class="col-md-5 col-md-offset-2">
+                <li id="1">She ___ to the Olympics.</li>
+                <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(1,this.value)"/> went</p>
+                <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(1,this.value)"/> want </p>
+                <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(1,this.value)"/> go </p>
 
-  <li id="2">I ___ a fast car.</li>
-  <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> buy </p>
-  <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> drove </p>
-  <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> clean </p>
+                <li id="2">I ___ a fast car.</li>
+                <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(2,this.value)"/> buy </p>
+                <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(2,this.value)"/> drove </p>
+                <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(2,this.value)"/> clean </p>
 
-  <li id="3">They ___ milk the last saturday.</li>
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/> drink </p>
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/> drank </p>
-  <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
+                <li id="3">They ___ milk the last saturday.</li>
+                <p><input style="cursor: pointer;" type="radio" name="R3" value="a" onclick="Engine(3,this.value)"/> drink </p>
+                <p><input style="cursor: pointer;" type="radio" name="R3" value="b" onclick="Engine(3,this.value)"/> drank </p>
+                <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(3,this.value)"/> clean </p>
+        </div>
+        <div class="col-md-offset-2">
+                <li id="4">They ___ in the last party.</li>
+                <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> danced </p>
+                <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> eat</p>
+                <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> jump</p>
 
-  <li id="4">They ___ in the last party.</li>
-  <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(4,this.value)"/> danced </p>
-  <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(4,this.value)"/> eat</p>
-  <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(4,this.value)"/> jump</p>
-
-  <li id="5">We ___ for an hour.</li>
-  <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> waited </p>
-  <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> run </p>
-  <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> go</p>
+                <li id="5">We ___ for an hour.</li>
+                <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(5,this.value)"/> waited </p>
+                <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(5,this.value)"/> run </p>
+                <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(5,this.value)"/> go</p>
+    
+        </div>
       </ol>
-      <br>
+  </div>
+
+          <br>
 
 <div class="numeracion">
     <ul>
@@ -175,7 +181,7 @@
 <div id="outer">
     <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> drink </button></div>
     <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="return false;"/> drunk </button></div>
-    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="border-color:Green;"/> drank </button></div>
+    <div class="inner"> <input style="cursor: pointer;" type="radio" name="R5" value="a" onClick="border-color:Green;" checked="checked"/> drank </button></div>
 </div>
 
         </div>     
@@ -187,38 +193,42 @@
     </ul>
 </div>
 
-<ol>
-  <li id="6">
-    <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(6,this.value)"/> begin</p>
-    <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(6,this.value)"/> began </p>
-    <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(6,this.value)"/> begun </p>
-  </li>
-  <li id="7">
-    <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(7,this.value)"/> broke </p>
-    <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(7,this.value)"/> break </p>
-    <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(7,this.value)"/> broken </p>
-  </li>
-  <li id="8">
-    <p><input style="cursor: pointer;" type="radio" name="R3" value="a" onclick="Engine(8,this.value)"/> choose </p>
-    <p><input style="cursor: pointer;" type="radio" name="R3" value="b" onclick="Engine(8,this.value)"/> chose </p>
-    <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(8,this.value)"/> chosen </p>
-  </li>
-  <li id="9">
-    <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(9,this.value)"/> eaten </p>
-    <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(9,this.value)"/> eat</p>
-    <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(9,this.value)"/> ate</p>
-  </li>
-  <li id="10">
-    <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(10,this.value)"/> fly </p>
-    <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(10,this.value)"/> flew </p>
-    <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(10,this.value)"/> flown</p>
-  </li>
-</ol>
-      <br>
+<div class="row">
+  <ol>
+        <div class="col-md-5 col-md-offset-2">
+          <li id="6">
+            <p><input style="cursor: pointer;" type="radio" name="R1" value="a" onclick="Engine(6,this.value)"/> begin</p>
+            <p><input style="cursor: pointer;" type="radio" name="R1" value="b" onclick="Engine(6,this.value)"/> began </p>
+            <p><input style="cursor: pointer;" type="radio" name="R1" value="c" onclick="Engine(6,this.value)"/> begun </p>
+          </li>
 
+          <li id="7">
+            <p><input style="cursor: pointer;" type="radio" name="R2" value="a" onclick="Engine(7,this.value)"/> broke </p>
+            <p><input style="cursor: pointer;" type="radio" name="R2" value="b" onclick="Engine(7,this.value)"/> break </p>
+            <p><input style="cursor: pointer;" type="radio" name="R2" value="c" onclick="Engine(7,this.value)"/> broken </p>
+          </li>
 
-      
-      <br>
+          <li id="8">
+            <p><input style="cursor: pointer;" type="radio" name="R3" value="a" onclick="Engine(8,this.value)"/> choose </p>
+             <p><input style="cursor: pointer;" type="radio" name="R3" value="b" onclick="Engine(8,this.value)"/> chose </p>
+             <p><input style="cursor: pointer;" type="radio" name="R3" value="c" onclick="Engine(8,this.value)"/> chosen </p>
+          </li>
+        </div>
+        <div class="col-md-offset-2">
+          <li id="9">
+            <p><input style="cursor: pointer;" type="radio" name="R4" value="a" onclick="Engine(9,this.value)"/> eaten </p>
+             <p><input style="cursor: pointer;" type="radio" name="R4" value="b" onclick="Engine(9,this.value)"/> eat</p>
+             <p><input style="cursor: pointer;" type="radio" name="R4" value="c" onclick="Engine(9,this.value)"/> ate</p>
+          </li>
+
+          <li id="10">
+            <p><input style="cursor: pointer;" type="radio" name="R5" value="a" onclick="Engine(10,this.value)"/> fly </p>
+            <p><input style="cursor: pointer;" type="radio" name="R5" value="b" onclick="Engine(10,this.value)"/> flew </p>
+            <p><input style="cursor: pointer;" type="radio" name="R5" value="c" onclick="Engine(10,this.value)"/> flown</p>
+          </li>
+        </div>
+  </ol>
+</div>
       <div align="center">
       <button onclick="Score()" class="button2" >Check</button>
       </div>
