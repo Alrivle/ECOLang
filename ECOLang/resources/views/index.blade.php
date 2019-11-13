@@ -27,7 +27,7 @@
                             <form method="POST" action="{{route ('logInDB')}}">
                                 {{csrf_field()}}
                                 {!! $errors->first('email','<span class="error">:message</span>')!!}
-                                <input type="text" placeholder="Correo" name="email" value="{{old('email')}}" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20">
+                                <input type="text" placeholder="Correo" name="email" value="{{old('email')}}" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="40">
                                 {!! $errors->first('password','<span class="error">:message</span>')!!}
                                 <input type="password" placeholder="Contraseña" name="password" maxlength="20" required="true">
                                 <button type="submit">Iniciar Sesión</button>
