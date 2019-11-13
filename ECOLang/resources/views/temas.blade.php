@@ -24,7 +24,7 @@
         <div class="card">
             <div class="face face1">
                 <div class="content content3">
-                    <img src="{{asset('img/get.png')}}">
+                    <img src="{{asset('img/shopping-bag.png')}}">
                     <h1>Get</h1>
                 </div>
             </div>

@@ -37,8 +37,8 @@ Route::get('/exercisePS', function () {
 Route::get('/lecturaPS', function () {
     return view('lecturaPS');
 });
-Route::get('/regularV', function () {
-    return view('regularV');
+Route::get('/hangMan', function () {
+    return view('hangMan');
 });
 Route::get('/vocabulary', function () {
     return view('vocabulary');

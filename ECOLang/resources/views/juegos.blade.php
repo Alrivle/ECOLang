@@ -35,7 +35,7 @@
 <div class="card3">
   <img src="{{asset('img/hangman-game.png')}}" alt="HangMan Game">
   <h2>Hang Man</h2>
-  <button onclick="window.location.href='b.php'">Start</button>
+  <button onclick="window.location.href='hangMan'">Start</button>
 </div>
 </div>
 </body>
