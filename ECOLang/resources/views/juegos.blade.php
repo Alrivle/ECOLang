@@ -26,16 +26,17 @@
 <div class="title">
     <h1>Juegos</h1>
 </div>
-<div class="card1">
-  <img src="{{asset('img/languages.png')}}" alt="Dictionary">
-  <h2>Vocabulary</h2>
-  <button onclick="window.location.href='vocabulary'">Start</button>
-</div>
 
-<div class="card3">
+<div class="card1">
   <img src="{{asset('img/hangman-game.png')}}" alt="HangMan Game">
   <h2>Hang Man</h2>
   <button onclick="window.location.href='hangMan'">Start</button>
+</div>
+
+<div class="card3">
+  <img src="{{asset('img/languages.png')}}" alt="Dictionary">
+  <h2>Vocabulary</h2>
+  <button onclick="window.location.href='vocabulary'">Start</button>
 </div>
 </div>
 </body>

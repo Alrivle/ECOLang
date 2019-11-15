@@ -44,7 +44,7 @@
   <div class="controls">
     <div class="input">
       <label>Write a letter:
-        <input type="text" class="guess" maxlength="1" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.keyCode == 13) || (event.charCode == 32));">
+        <input autofocus type="text" class="guess" maxlength="1" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.keyCode == 13) || (event.charCode == 32));">
         <div class="max"><span class="max-length"></div>
       </label>
       <div class="submit"></div>
