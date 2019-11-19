@@ -120,6 +120,15 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
+.respuestas{
+  height: 5vh;
+  width: 10vw;
+  position: relative;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: lightblue;
+}
   </style>
 </head>
 <body>
@@ -149,23 +158,23 @@ body{
     <h1 style="text-align: right; margin-top: -7vh; margin-right: 13vw">Answers</h1>
     <div class="col-sm-8">
       <ol style="text-align:left; margin-left: 10vw; margin-bottom:5 0px; font-size:23px;">
-        <li>What is get?</li>
-        <li>Why do we use get?</li>
+        <li>¿What is the meaning of "get down"?</li>
+        <li>¿got is in past?</li>
       </ol>
     </div>
     <div class="col-sm-4">
-       <div class="col-sm-2" style="width: 50%;">
+       <div class="col-sm-2" style="width: 50%; font-size: 23px;">
           <div class="parent">
             <span draggable='true' ondragstart='onDragStart(event);'
               ondragover='onDragOver(event);'
-              ondrop='onDrop(event);' class="respuestas" id="respuesta1">
+              ondrop='onDrop(event);' class="respuestas" id="respuesta1" style="padding-left: 80px;">
             </span>
             <br><br> 
         </div>
         <div class="parent">
             <span draggable='true' ondragstart='onDragStart(event);'
               ondragover='onDragOver(event);'
-              ondrop='onDrop(event);' class="respuestas" id="respuesta2">
+              ondrop='onDrop(event);' class="respuestas" id="respuesta2" style="padding-left: 80px;">
             </span>
             <br><br> 
         </div>
@@ -174,12 +183,12 @@ body{
           <div class="parent">
             <span draggable='true' ondragstart='onDragStart(event);'
               ondragover='onDragOver(event);'
-              ondrop='onDrop(event);' class="respuestas" id="cajaresp1"> Respuesta1
+              ondrop='onDrop(event);' class="respuestas" id="cajaresp1"> Verdadero
             </span>
             <br><br> 
           </div>
           <div class="parent">
-            <span draggable='true' ondragstart='onDragStart(event);' ondragover='onDragOver(event);' ondrop='onDrop(event);' class="respuestas" id="cajaresp2"> Respuesta2
+            <span draggable='true' ondragstart='onDragStart(event);' ondragover='onDragOver(event);' ondrop='onDrop(event);' class="respuestas" id="cajaresp2"> Bajar
             </span>
             <br><br> 
           </div>
