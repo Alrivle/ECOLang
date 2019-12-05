@@ -26,6 +26,7 @@
     <div class="container">    
         <div class="row" align="center">
            <h1 style="text-align: center; font-size:65px;">Hang Man</h1>
+           <h3 style="text-align: center; font-size:35px;">Guess the word by writing it's letters</h3>
         </div>
     </div>
 
