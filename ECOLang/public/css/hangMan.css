@@ -11,7 +11,7 @@
   opacity: 0;
   width: 50%;
   margin:auto;
-  margin-top: -90px;
+  margin-top: -50px;
   border-radius: 20px;
   font-size: 25px;
 }
@@ -133,3 +133,4 @@ input:focus{
     margin: auto;
     width: 50%; 
 }
+
